@@ -8,10 +8,7 @@ html, body{
 }
 
 
-
-
 #home {
-    /* background: url(../images/background.jpg); */
     background: url(../images/background.jpg) no-repeat center fixed;
     display: table;
     height: 100%;
@@ -21,9 +18,12 @@ html, body{
 }
 
 #avatarIcon{
-    padding-top: 25px;
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 25%;
+    padding-top:40px;
+    padding-bottom:50px;
+    vertical-align: center;
 }
 
 
@@ -31,6 +31,12 @@ html, body{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    color: darkblue;
+}
+
+#gitIcon{
+    width: 80px;
+    height: 60px;
 }
 
 #landingText h1{
@@ -46,14 +52,18 @@ html, body{
     width: 100%;
 }
 
-/* #fixed{
-    background: url(../images/fixedsampleimage.jpg) no-repeat center fixed;
-    display: table;
-    height: 60%;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-} */
+#expertiseSection{
+    background-color: rgb(179, 178, 178);
+}
+
+#portfolioSection{
+    background-color:#777444;
+}
+
+#portfolioItems{
+    padding: 5px;
+}
+
 
 footer{
     /* width: 100%; */
@@ -61,19 +71,26 @@ footer{
     color: black;
 }
 
-.fab {
+
+.fab ,.fas{
     padding: 5%;
-    font-size: 25 px;
+    font-size: 2rem;
     color: black;
 }
 
-.fab:hover {
+.fab:hover, .fas:hover {
     color: darksalmon;
     text-decoration: none;
 }
 
-#expertiseIcon{
-    font-size: larger;
+#footerGitIcon{
+    height: 150px;
+    widows: 100px;
+}
+
+#langIcon{
+    width: 100px;
+    height: 80px;
 }
 
 /* @media (min-width: 768px) {

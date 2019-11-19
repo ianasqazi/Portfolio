@@ -16,7 +16,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 
     <link href="../Portfolio/assets/css/style.css" rel="stylesheet">
-    <script src="../Portfolio/assets/js/script.js"></script>
+    <!-- <script src="../Portfolio/assets/js/script.js"></script> -->
 
 
     <title>Anas Portfolio</title>
@@ -24,7 +24,7 @@
 <body>
 
     <div id="mainNav" class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top text-uppercase">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top text-uppercase navbar-shrink">
             <a class="navbar-brand" href="#">ANAS QAZI portfolio</a>
             <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,15 +34,14 @@
             <div id="navbarNavDropdown" class="navbar-collapse collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                        <i class="fa fa-home"></i>
-                        Home
+                        <a class="nav-link" href="../Portfolio/index.html">
+                        <i class="fa fa-home"></i> Home
                         <span class="sr-only">(current)</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="https://github.com/ianasqazi" target="_blank">Github</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
@@ -66,51 +65,63 @@
 
 
     <div id="home">
-        <div class="container-fluid" id="landingText">
-            <img class="img-fluid" src="../Portfolio/assets/images/avatar.png" id="avatarIcon" alt="avatar">
-            <h1>Portfolio</h1>
-            <div>
-                <i class="fas fa-grip-lines"></i>
-                <i class="fas fa-hand-spock"></i>
-                <i class="fas fa-grip-lines"></i>
-            </div>
-            <p class="masthead-subheading font-weight-light mb-0">Full Stack Web Developer</p>
-            <!-- <a href="#" class="btn btn-default btn-lg">Get Started</a> -->
+        <div class="container-fluid row" id="landingText">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-fluid rounded" src="../Portfolio/assets/images/avatar.png" id="avatarIcon" alt="avatar">
+                </div>
+                <div class="col-sm-6">
+                    <h1>Anas Qazi</h1>
+                    <p>Full Stack Web Developer
+                        <a href="https://github.com/ianasqazi" target="_blank">
+                            <img class="img-fluid rounded col-sm-4" id="gitIcon" src="../Portfolio/assets/images/icons/githubIcon.png" alt="github Icon" title="github Icon">
+                        </a>
+                    </p>
+                </div>
+            </div> 
         </div>
     </div>
 
     <!-- Expertise Section  -->
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" id="expertiseSection">
 
             <!-- Portfolio Section Heading -->
             <h2 class="page-section-heading text-center text-uppercase">Expertise</h2>
-      
-            <!-- Icon Divider -->
-            <div>
-                <i class="fas fa-grip-lines"></i>
-                <i class="fas fa-hand-spock"></i>
-                <i class="fas fa-grip-lines"></i>
-            </div>
+
 
             <div class="row">
                     <div class="col-sm-4">
-                        <h3>Contact Us</h3>
+                        <h3>Programming Languages</h3>
+                        <div>
+                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/jsIcon.png" alt="JS Icon" title="JS Icon">
+                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/htmlIcon.png" alt="HTML Icon" title="HTML Icon">
+                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/cssIcon.png" alt="CSS Icon" title="CSS Icon">
+                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/sqlIcon.png" alt="SQL Icon" title="SQL Icon">
+
+                        </div>
+                        
+
                     </div>
                     <div class="col-sm-4" id="expertiseIcons">
-                        <h3>Coding</h3>
+                        <h3>Technologies & Frameworks</h3>
+                        <!-- <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/githubIcon.png" alt="Github Icon" title="Github Icon"> -->
                         
-                        <i class="fab fa-js-square"></i>
-                        <i class="fab fa-node"></i>
-                        <i class="fab fa-bootstrap"></i>
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-angular"></i>
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/jqueryIcon.png" alt="jQuery Icon" title="jQuery Icon">
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/npmIcon.png" alt="npm Icon" title="npm Icon">
+
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/nodejsIcon.png" alt="Node JS Icon" title="Node JS Icon">
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/reactIcon.png" alt="React JS Icon" title="React JS Icon">
+
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/angularjsIcon.png" alt="Angular JS Icon" title="Angular JS Icon">
 
                     </div>
                     <div class="col-sm-4">
-                        <h3>Add icon</h3>
+                        <h3>Databases</h3>
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/oracledbIcon.png" alt="Angular JS Icon" title="Angular JS Icon">
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/mysqlIcon.png" alt="Angular JS Icon" title="Angular JS Icon">
+                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/mongodbIcon.png" alt="Angular JS Icon" title="Angular JS Icon">
+
                     </div>
                 </div>
 
@@ -118,42 +129,34 @@
 
     <!-- Portfolio Section  -->
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" id="portfolioSection">
         <!-- Portfolio Section Heading -->
         <h2 class="page-section-heading text-center text-uppercase">Portfolio</h2>
-      
-        <!-- Icon Divider -->
-        <div>
-            <i class="fas fa-grip-lines"></i>
-            <i class="fas fa-hand-spock"></i>
-            <i class="fas fa-grip-lines"></i>
-        </div>
-
             
       
         <!-- Portfolio Grid Items -->
 
         <!-- include fa icons for languages used  -->
         <div class="row container-fluid">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding" id="portfolioItems">
                 <div><img class="img-fluid rounded" src="../Portfolio/assets/images/password_generator_ss.png" alt="Password Generator Website Screenshot" title="Random Password Generator"></div>
                 <h5>Password Generator</h5>
                 <p>A random password generator tool</p>
                 <a class="btn btn-primary" href="https://ianasqazi.github.io/Password-Generator/" target="_blank">VIEW SITE</a>
             </div>                    
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
-                <div><img class="img-fluid rounded" src="../Portfolio/assets/images/password_generator_ss.png" alt="Day Planner Website Screenshot" title="Day Planner Application"></div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding"  id="portfolioItems">
+                <div><img class="img-fluid rounded" src="../Portfolio/assets/images/dayplanner.png" alt="Day Planner Website Screenshot" title="Day Planner Application"></div>
                 <h5>Day Planner</h5>
                 <p>Simple Calendar Application that allows the user to save events for each hour of the day.</p>
                 <a class="btn btn-primary" href="https://ianasqazi.github.io/Day-Planner/" target="_blank">VIEW SITE</a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding"  id="portfolioItems">
                 <div><img class="img-fluid rounded" src="../Portfolio/assets/images/jsquiz.png" alt="JS Quiz Website Screenshot" title="JS Quiz Website"></div>
                 <h5>Javascript Quiz</h5>
                 <p>A simple questionnaire application which will give you score based on how fast you answer the questions</p>
                 <a class="btn btn-primary" href="https://ianasqazi.github.io/JS-Quiz/" target="_blank">VIEW SITE</a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding"  id="portfolioItems">
                 <div><img class="img-fluid rounded" src="../Portfolio/assets/images/clima.png" alt="Clima Website Screenshot" title="Climate Website"></div>
                 <h5>Javascript Quiz</h5>
                 <p>A Weather Application using free Weather API from openweatherapp.org. Access current weather data for any location on Earth including over 200,000 cities!</p>
@@ -161,65 +164,8 @@
             </div>
 
         </div>
+    </div>
 
-
-          <div class="container-fluid">
-
-                <!-- Contact Section Heading -->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-          
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-          
-                <!-- Contact Section Form -->
-                <div class="row">
-                  <div class="col-lg-8 mx-auto">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                      <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <label>Name</label>
-                          <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <label>Email Address</label>
-                          <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <label>Phone Number</label>
-                          <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <label>Message</label>
-                          <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <br>
-                      <div id="success"></div>
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-          
-            </div>
 
 <!-- 2 column format  -->
 
@@ -271,21 +217,39 @@
     <footer class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
-                <h3>Contact Us</h3>
+                <h3>Contact Me</h3>
+                <h4>Anas Qazi</h4>
+                <p>647-581-7770<br>
+                ianasqazi@gmail.com<br>
+                Toronto, Canada</p>
+
+                <a href="mailto:ianasqazi@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                <a href="tel:647-581-7770"><i class="fas fa-mobile-alt"></i></a>
+                <a href="sms:647-581-7770"><i class="fas fa-sms"></i></a>
+
+
             </div>
             <div class="col-sm-4">
                 <h3>Connect @</h3>
                 <a href="#" class="fab fa-facebook"></a>
                 <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-snapchat-square"></a>
                 <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-slack"></a>
+                <a href="#" class="fab fa-telegram-plane"></a>
+                <a href="#" class="fab fa-youtube-square"></a>
+
+
                 <a href="#" class="fab fa-linkedin"></a>
 
             </div>
             <div class="col-sm-4">
-                <h3>Add icon</h3>
+                    <a href="https://github.com/ianasqazi" target="_blank" >
+                    <img class="img-fluid rounded" id="footerGitIcon" src="../Portfolio/assets/images/icons/githubIcon2.png" alt="github Icon" title="github Icon">
+                    </a>
             </div>
         </div>
-        <div class="row container-fluid text-center">
+        <div class="row container-fluid text-center" id="fixedBotton">
             <div class="col">
                     <h5>Copyright &copy; Anas Qazi 2019</h5>
             </div>
