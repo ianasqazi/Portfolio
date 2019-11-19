@@ -27,7 +27,6 @@ html, body{
 }
 
 
-
 #landingText{
     display: table-cell;
     text-align: center;
@@ -47,14 +46,14 @@ html, body{
     width: 100%;
 }
 
-#fixed{
+/* #fixed{
     background: url(../images/fixedsampleimage.jpg) no-repeat center fixed;
     display: table;
     height: 60%;
     position: relative;
     width: 100%;
     background-size: cover;
-}
+} */
 
 footer{
     /* width: 100%; */
@@ -71,6 +70,10 @@ footer{
 .fab:hover {
     color: darksalmon;
     text-decoration: none;
+}
+
+#expertiseIcon{
+    font-size: larger;
 }
 
 /* @media (min-width: 768px) {

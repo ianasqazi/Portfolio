@@ -16,22 +16,20 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 
     <link href="../Portfolio/assets/css/style.css" rel="stylesheet">
+    <script src="../Portfolio/assets/js/script.js"></script>
+
 
     <title>Anas Portfolio</title>
 </head>
 <body>
 
-    <div id="app" class="container-fluid">
+    <div id="mainNav" class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top text-uppercase">
             <a class="navbar-brand" href="#">ANAS QAZI portfolio</a>
             <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                  </button> -->
             
             <div id="navbarNavDropdown" class="navbar-collapse collapse">
                 <ul class="navbar-nav mr-auto">
@@ -53,7 +51,13 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/register') }}">Register</a>
+                        <a class="nav-link" href="#">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -66,19 +70,160 @@
             <img class="img-fluid" src="../Portfolio/assets/images/avatar.png" id="avatarIcon" alt="avatar">
             <h1>Portfolio</h1>
             <div>
-                        <i class="fas fa-grip-lines"></i>
-
-                        <i class="fas fa-hand-spock"></i>
-                        <i class="fas fa-grip-lines"></i>
+                <i class="fas fa-grip-lines"></i>
+                <i class="fas fa-hand-spock"></i>
+                <i class="fas fa-grip-lines"></i>
             </div>
-            <h3>This is my portfolio page</h3>
-            <a href="#" class="btn btn-default btn-lg">Get Started</a>
+            <p class="masthead-subheading font-weight-light mb-0">Full Stack Web Developer</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Get Started</a> -->
         </div>
     </div>
 
+    <!-- Expertise Section  -->
+
+    <div class="container-fluid text-center">
+
+            <!-- Portfolio Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase">Expertise</h2>
+      
+            <!-- Icon Divider -->
+            <div>
+                <i class="fas fa-grip-lines"></i>
+                <i class="fas fa-hand-spock"></i>
+                <i class="fas fa-grip-lines"></i>
+            </div>
+
+            <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="col-sm-4" id="expertiseIcons">
+                        <h3>Coding</h3>
+                        
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-node"></i>
+                        <i class="fab fa-bootstrap"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-angular"></i>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Add icon</h3>
+                    </div>
+                </div>
+
+    </div>
+
+    <!-- Portfolio Section  -->
+
+    <div class="container-fluid text-center">
+        <!-- Portfolio Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase">Portfolio</h2>
+      
+        <!-- Icon Divider -->
+        <div>
+            <i class="fas fa-grip-lines"></i>
+            <i class="fas fa-hand-spock"></i>
+            <i class="fas fa-grip-lines"></i>
+        </div>
+
+            
+      
+        <!-- Portfolio Grid Items -->
+
+        <!-- include fa icons for languages used  -->
+        <div class="row container-fluid">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
+                <div><img class="img-fluid rounded" src="../Portfolio/assets/images/password_generator_ss.png" alt="Password Generator Website Screenshot" title="Random Password Generator"></div>
+                <h5>Password Generator</h5>
+                <p>A random password generator tool</p>
+                <a class="btn btn-primary" href="https://ianasqazi.github.io/Password-Generator/" target="_blank">VIEW SITE</a>
+            </div>                    
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
+                <div><img class="img-fluid rounded" src="../Portfolio/assets/images/password_generator_ss.png" alt="Day Planner Website Screenshot" title="Day Planner Application"></div>
+                <h5>Day Planner</h5>
+                <p>Simple Calendar Application that allows the user to save events for each hour of the day.</p>
+                <a class="btn btn-primary" href="https://ianasqazi.github.io/Day-Planner/" target="_blank">VIEW SITE</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
+                <div><img class="img-fluid rounded" src="../Portfolio/assets/images/jsquiz.png" alt="JS Quiz Website Screenshot" title="JS Quiz Website"></div>
+                <h5>Javascript Quiz</h5>
+                <p>A simple questionnaire application which will give you score based on how fast you answer the questions</p>
+                <a class="btn btn-primary" href="https://ianasqazi.github.io/JS-Quiz/" target="_blank">VIEW SITE</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding">
+                <div><img class="img-fluid rounded" src="../Portfolio/assets/images/clima.png" alt="Clima Website Screenshot" title="Climate Website"></div>
+                <h5>Javascript Quiz</h5>
+                <p>A Weather Application using free Weather API from openweatherapp.org. Access current weather data for any location on Earth including over 200,000 cities!</p>
+                <a class="btn btn-primary" href="https://ianasqazi.github.io/Weather-App/" target="_blank">VIEW SITE</a>
+            </div>
+
+        </div>
+
+
+          <div class="container-fluid">
+
+                <!-- Contact Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+          
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+          
+                <!-- Contact Section Form -->
+                <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                      <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Name</label>
+                          <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Email Address</label>
+                          <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Phone Number</label>
+                          <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Message</label>
+                          <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <br>
+                      <div id="success"></div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+          
+            </div>
+
 <!-- 2 column format  -->
 
-    <div class="padding">
+    <!-- <div class="padding">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
@@ -91,11 +236,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- 4 column format -->
 
-    <div class="padding">
+    <!-- <div class="padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -113,13 +258,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Fixed Image DIV -->
 
-    <div id="fixed">
+    <!-- <div id="fixed">
 
-    </div>
+    </div> -->
 
     <!-- Footer  3 column format-->
 
@@ -139,6 +284,12 @@
             <div class="col-sm-4">
                 <h3>Add icon</h3>
             </div>
+        </div>
+        <div class="row container-fluid text-center">
+            <div class="col">
+                    <h5>Copyright &copy; Anas Qazi 2019</h5>
+            </div>
+            
         </div>
 
     </footer>
