@@ -1,0 +1,80 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-collapse.in {
+    display: block !important;
+}
+
+
+
+
+#home {
+    /* background: url(../images/background.jpg); */
+    background: url(../images/background.jpg) no-repeat center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+#avatarIcon{
+    padding-top: 25px;
+    max-width: 30%;
+    max-height: 30%;
+}
+
+
+
+#landingText{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#landingText h1{
+    font-size: 500%;
+    font-weight: 700;
+}
+
+.padding{
+    padding: 80px 0;
+}
+
+.padding img{
+    width: 100%;
+}
+
+#fixed{
+    background: url(../images/fixedsampleimage.jpg) no-repeat center fixed;
+    display: table;
+    height: 60%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+footer{
+    /* width: 100%; */
+    padding: 5% 5% 10% 5%;
+    color: black;
+}
+
+.fab {
+    padding: 5%;
+    font-size: 25 px;
+    color: black;
+}
+
+.fab:hover {
+    color: darksalmon;
+    text-decoration: none;
+}
+
+/* @media (min-width: 768px) {
+    #navToggle{
+        display: none;
+    }
+  } */
