@@ -1,12 +1,65 @@
+/* Page Style */
+
 html, body{
     height: 100%;
     width: 100%;
 }
 
-.navbar-collapse.in {
-    display: block !important;
+/* Navigation Bar Style  */
+
+.navbar {
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+.navbar-default .navbar-brand , #jobTitle{
+    color: #F2F2F2;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.navbar-default .navbar-nav > .active > a{
+    color: #233278;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #233278;
+    transform: skewX(-20deg);
+
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #F2F2F2;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #233278;
+    /* transform: scale(1.25); */
+}
+
+.navbar-collapse.in {
+    display: block !important;
+    text-decoration: none;
+}
+
+/* .navbar-brand{
+    display: .d-none .d-md-block .d-lg-none;
+    .d-none .d-md-block .d-lg-none
+} */
+
+.fa-bars{
+    transform: none !important;
+    border-color:#F2F2F2;
+}
+
+/* Landing Section  */
 
 #home {
     background: url(../images/background.jpg) no-repeat center fixed;
@@ -31,12 +84,25 @@ html, body{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color: darkblue;
+    color: #233278;
+}
+
+#landingText h1{
+    font-family: 'Cedarville Cursive', cursive;
+
 }
 
 #gitIcon{
     width: 80px;
-    height: 60px;
+    height: 50px;
+}
+
+#gitIcon:hover{
+    /* transform: translateX(20px); */
+    transform: rotate(1080deg);
+    transition: all 3s;
+
+
 }
 
 #landingText h1{
@@ -52,40 +118,26 @@ html, body{
     width: 100%;
 }
 
-#expertiseSection{
-    background-color: rgb(179, 178, 178);
+/* Skill Set Section  */
+
+#skillSetSection{
+    background-color:#F2F2F2;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
 }
 
+/* Portfolio Section  */
+
 #portfolioSection{
-    background-color:#777444;
+    background-color: #085CA6;
+    color: #F2F2F2;
+    
 }
 
 #portfolioItems{
     padding: 5px;
-}
-
-
-footer{
-    /* width: 100%; */
-    padding: 5% 5% 10% 5%;
-    color: black;
-}
-
-
-.fab ,.fas{
-    padding: 5%;
-    font-size: 2rem;
-    color: black;
-}
-
-.fab:hover, .fas:hover {
-    color: darksalmon;
-    text-decoration: none;
-}
-
-#footerGitIcon{
-    height: 150px;
-    widows: 100px;
 }
 
 #langIcon{
@@ -93,8 +145,83 @@ footer{
     height: 80px;
 }
 
-/* @media (min-width: 768px) {
+/* Footer Section  */
+
+footer{
+    width: 100%;
+    padding: 5% 5% 10% 5%;
+    color:#F2F2F2;
+    background-color: #233278;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+
+}
+
+#myInfo:hover{
+    border:2px solid #96B3D9;
+    transition: 1s;
+    border-radius: 10%;
+    letter-spacing: 2px;
+    /* box-shadow: inset 0 0 0 2px #96B3D9; */
+
+}
+
+#connectMe:hover{
+    /* border:2px solid #96B3D9; */
+    transition: 1s;
+    /* border-radius: 15%; */
+    letter-spacing: 3px;
+    /* box-shadow: inset 0 0 0 2px #96B3D9; */
+
+}
+
+#githubLink:hover{
+    transition: 1s;
+    transform: scale(1.25);
+}
+
+#scrollTop{
+    text-decoration: none;
+    color: #F2F2F2 !important; 
+}
+
+#fixedBotton{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.fab ,.fas{
+
+    padding: 5%;
+    font-size: 2rem;
+    color: #F2F2F2;
+}
+
+.fab:hover, .fas:hover{
+    transition: all 300ms ease-in-out;
+
+    color: #96B3D9;
+    text-decoration: none;
+    transform: scale(2);
+}
+
+.fa-angle-up:hover{
+    transition: all 1s ease-in-out;
+}
+
+
+#footerGitIcon{
+    height: 150px;
+    widows: 100px;
+}
+
+
+
+@media (min-width: 768px) {
     #navToggle{
         display: none;
     }
-  } */
+  }

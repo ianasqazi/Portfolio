@@ -15,8 +15,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+
     <link href="../Portfolio/assets/css/style.css" rel="stylesheet">
-    <!-- <script src="../Portfolio/assets/js/script.js"></script> -->
+    <script src="../Portfolio/assets/js/script.js"></script>
 
 
     <title>Anas Portfolio</title>
@@ -24,13 +29,14 @@
 <body>
 
     <div id="mainNav" class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top text-uppercase navbar-shrink">
-            <a class="navbar-brand" href="#">ANAS QAZI portfolio</a>
-            <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-md navbar-default fixed-top text-uppercase navbar-shrink">
+            <a class="navbar-brand d-md-none" href="index.html">ANAS QAZI Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
             </button>
 
-            
+            <!-- <i class="fas fa-bars"></i> -->
+
             <div id="navbarNavDropdown" class="navbar-collapse collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -44,19 +50,19 @@
                         <a class="nav-link" href="https://github.com/ianasqazi" target="_blank">Github</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Resume</a>
                     </li>
             
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Expertise</a>
+                        <a class="nav-link" href="#skillSetSection">Skill Set</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#portfolioSection">Portfolio</a>
                         </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="#footerSection">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +78,7 @@
                 </div>
                 <div class="col-sm-6">
                     <h1>Anas Qazi</h1>
-                    <p>Full Stack Web Developer
+                    <p id="jobTitle">Full Stack Web Developer
                         <a href="https://github.com/ianasqazi" target="_blank">
                             <img class="img-fluid rounded col-sm-4" id="gitIcon" src="../Portfolio/assets/images/icons/githubIcon.png" alt="github Icon" title="github Icon">
                         </a>
@@ -82,12 +88,12 @@
         </div>
     </div>
 
-    <!-- Expertise Section  -->
+    <!-- Skill Set Section  -->
 
-    <div class="container-fluid text-center" id="expertiseSection">
+    <div class="container-fluid text-center" id="skillSetSection">
 
             <!-- Portfolio Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase">Expertise</h2>
+            <h2 class="page-section-heading text-center text-uppercase">SKILL SET</h2>
 
 
             <div class="row">
@@ -103,7 +109,7 @@
                         
 
                     </div>
-                    <div class="col-sm-4" id="expertiseIcons">
+                    <div class="col-sm-4" id="skillSetIcons">
                         <h3>Technologies & Frameworks</h3>
                         <!-- <img class="img-fluid rounded col-sm-4" id="langIcon" src="../Portfolio/assets/images/icons/githubIcon.png" alt="Github Icon" title="Github Icon"> -->
                         
@@ -212,46 +218,54 @@
 
     </div> -->
 
-    <!-- Footer  3 column format-->
+    <!-- Footer -->
 
-    <footer class="container-fluid text-center">
+    <footer class="container-fluid text-center" id="footerSection">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="myInfo">
                 <h3>Contact Me</h3>
                 <h4>Anas Qazi</h4>
                 <p>647-581-7770<br>
                 ianasqazi@gmail.com<br>
                 Toronto, Canada</p>
 
-                <a href="mailto:ianasqazi@gmail.com"><i class="fas fa-envelope-square"></i></a>
-                <a href="tel:647-581-7770"><i class="fas fa-mobile-alt"></i></a>
-                <a href="sms:647-581-7770"><i class="fas fa-sms"></i></a>
+                <a href="mailto:ianasqazi@gmail.com" class="fas fa-envelope-square" title="Email Me"></a>
+                <a href="tel:647-581-7770" class="fas fa-mobile-alt" title="Call Me"></a>
+                <a href="sms:647-581-7770" class="fas fa-sms" title="SMS Me"></a>
 
 
             </div>
-            <div class="col-sm-4">
-                <h3>Connect @</h3>
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-snapchat-square"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-slack"></a>
-                <a href="#" class="fab fa-telegram-plane"></a>
-                <a href="#" class="fab fa-youtube-square"></a>
-
-
-                <a href="#" class="fab fa-linkedin"></a>
+            <div class="col-sm-4" id="connectMe">
+                <h3>Connect Me</h3>
+                <a href="https://www.linkedin.com/in/anasqazi" class="fab fa-linkedin" target="_blank" title="LinkedIn"></a>
+                <a href="https://uttorfsfpt092-czt9438.slack.com/team/UN0F08AG6" class="fab fa-slack" target="_blank" title="Slack"></a>  
+                <a href="https://t.me/ianasqazi" class="fab fa-telegram-plane" target="_blank" title="Telegram"></a> 
+                <a href="https://twitter.com/reticentspeaks" class="fab fa-twitter" target="_blank" title="Twitter"></a>
+                <a href="https://www.facebook.com/ianasqazi" class="fab fa-facebook"  target="_blank" title="Facebook"></a>
+                <a href="https://www.instagram.com/ianasqazi/" class="fab fa-instagram" target="_blank" title="Instagram"></a>
+                <a href="https://www.snapchat/com/add/ianasqazi" class="fab fa-snapchat-square" target="_blank" title="Snapchat"></a>
+                <a href="https://www.youtube.com/c/AnasQazi" class="fab fa-youtube-square" target="_blank" title="Youtube"></a>
 
             </div>
-            <div class="col-sm-4">
-                    <a href="https://github.com/ianasqazi" target="_blank" >
-                    <img class="img-fluid rounded" id="footerGitIcon" src="../Portfolio/assets/images/icons/githubIcon2.png" alt="github Icon" title="github Icon">
+            <div class="col-sm-4" id="githubLink">
+                    <h3>GITHUB</h3>
+                    <a href="https://github.com/ianasqazi" target="_blank">
+                    <img class="img-fluid rounded" id="footerGitIcon" src="../Portfolio/assets/images/icons/githubIcon.png" alt="github Icon" title="Github Profile">
                     </a>
             </div>
         </div>
-        <div class="row container-fluid text-center" id="fixedBotton">
-            <div class="col">
-                    <h5>Copyright &copy; Anas Qazi 2019</h5>
+
+        <div class="row container-fluid text-center">
+                <div class="col">
+                    <a id="scrollTop" href = "#mainNav">
+                        <i class="fas fa-angle-up"></i>Scroll to TOP<i class="fas fa-angle-up"></i>
+                    </a>
+                </div>  
+        </div>
+
+        <div class="row container-fluid text-right" id="fixedBotton">
+            <div class="col text-muted">
+                    <span>Copyright &copy; Anas Qazi 2019</span>
             </div>
             
         </div>
