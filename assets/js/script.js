@@ -11,21 +11,29 @@ $(window).scroll(function(e) {
 });
 
 $(document).ready(function(){
-
-    callWeatherAPI();
+    $("#weatherForcast").hide();
+    // $("#weatherForcast").show();
+    getLocation();
+    // callWeatherAPI(position);
 });
 
-function callWeatherAPI(){
+function callWeatherAPI(position){
+    $("#weatherForcast").show();
+
     // var currentCity = $.trim($("#searchCity").val());
-    var currentCity = "Toronto";
+    // var currentCity = "Toronto";
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
 
     var currentDate = moment().format("MMMM Do YYYY");
     var currentDay = moment().format("dddd");
     
     var APIKey = "b72c0d35aba9f0b8c0e9ebb9ec68c3f8";
   
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + currentCity + "&units=metric&appid=" + APIKey;
-    
+    // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + currentCity + "&units=metric&appid=" + APIKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat  +"&lon=" + lon + "&units=metric&appid=" + APIKey;
+    // api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}
+
     // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=" + APIKey;
 
     $.ajax({
@@ -59,3 +67,17 @@ function callWeatherAPI(){
           localStorage.setItem("lastSearchedCity",currentCity);
   
     }
+
+
+function getLocation() {
+    
+    navigator.geolocation.getCurrentPosition(function(position) {
+    
+        console.log(position);
+
+    callWeatherAPI(position);
+
+      });
+
+    
+      } 
