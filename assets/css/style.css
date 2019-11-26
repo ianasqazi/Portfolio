@@ -386,6 +386,24 @@ html, body{
     width: 100%;
 }
 
+#weatherForcast{
+    padding-top: 30px;
+    font-size: 15px;
+    display: inline-block;
+    bottom: 0px;
+    align-content: right;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: center;
+}
+
+
+#weatherForcast img{
+    height: 18px;
+    width: 18px;
+    vertical-align: center;
+
+}
+
 /* Skill Set Section  */
 
 #skillSetSection{

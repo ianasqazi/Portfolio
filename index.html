@@ -21,6 +21,7 @@
 
 
     <link href="../Portfolio/assets/css/style.css" rel="stylesheet">
+    <script src="../Portfolio/assets/js/moment.js"></script>
     <script src="../Portfolio/assets/js/script.js"></script>
 
 
@@ -34,8 +35,6 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fas fa-bars"></span>
             </button>
-
-            <!-- <i class="fas fa-bars"></i> -->
 
             <div id="navbarNavDropdown" class="navbar-collapse collapse">
                 <ul class="navbar-nav mr-auto">
@@ -73,9 +72,11 @@
     <div id="home">
         <div class="container-fluid row" id="landingText">
             <div class="row">
+                
                 <div class="col-sm-6">
                     <img class="img-fluid rounded" src="../Portfolio/assets/images/avatar.png" id="avatarIcon" alt="avatar">
                 </div>
+                
                 <div class="col-sm-6">
                     <h1>Anas Qazi</h1>
                     <p id="jobTitle">Full Stack Web Developer
@@ -84,19 +85,70 @@
                         </a>
                     </p>
                 </div>
+
                 <div class="bird-container bird-container--one">
-                        <div class="bird bird--one"></div>
-                      </div>
-                      <div class="bird-container bird-container--two">
-                        <div class="bird bird--two"></div>
-                      </div>
-                      <div class="bird-container bird-container--three">
-                        <div class="bird bird--three"></div>
-                      </div>
-                      <div class="bird-container bird-container--four">
-                        <div class="bird bird--four"></div>
-                      </div>
-            </div> 
+                    <div class="bird bird--one"></div>
+                </div>
+                <div class="bird-container bird-container--two">
+                    <div class="bird bird--two"></div>
+                </div>
+                <div class="bird-container bird-container--three">
+                    <div class="bird bird--three"></div>
+                </div>
+                <div class="bird-container bird-container--four">
+                    <div class="bird bird--four"></div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row" >
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6 weatherForcast text-right" id="weatherForcast">
+                        <div class="row">
+                                <div class="col">
+                                    <span id="dayDate"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <span id="currentCity"></span>
+                                    <span id="currentCountry"></span>
+                                </div>
+                            </div>
+            
+                            <div class="row">
+                                <div class="col">
+                                    <span id="weatherInfo"></span>
+                                    <img id="weatherIcon">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <img src="../Portfolio/assets/images/icons/temp.png"><span id="currentTemp"></span>
+                                    <img src="../Portfolio/assets/images/icons/tempLow.png"><span id="tempLow"></span>
+                                    <img src="../Portfolio/assets/images/icons/tempHigh.png"><span id="tempHigh"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <img src="../Portfolio/assets/images/icons/pressure.png"><span id="pressure"></span>
+                                    <img src="../Portfolio/assets/images/icons/wind.png"><span id="windSpeed"></span>
+                                    <img src="../Portfolio/assets/images/icons/humidity.png"><span id="humidity"></span>
+
+                                </div>
+                            </div>
+                            
+                            
+                        </div> 
+                </div>
+                
+               
+            
+
+
         </div>
     </div>
 
