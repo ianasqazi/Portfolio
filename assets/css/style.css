@@ -394,6 +394,8 @@ html, body{
     position: relative;
     width: 100%;
     background-size: cover;
+    font-family: 'Ubuntu Mono', monospace;
+
 }
 
 /* Portfolio Section  */
@@ -401,6 +403,8 @@ html, body{
 #portfolioSection{
     background-color: #085CA6;
     color: #F2F2F2;
+    font-family: 'Ubuntu Mono', monospace;
+
     
 }
 
@@ -408,9 +412,18 @@ html, body{
     padding: 5px;
 }
 
+#portfolioItems img{
+    height: 250px;
+}
+
+#portfolioItems p{
+    padding: 10px;
+}
+
 #langIcon{
     width: 100px;
-    height: 80px;
+    height: 100px;
+    padding: 5px;
 }
 
 /* Footer Section  */
@@ -424,6 +437,8 @@ footer{
     position: relative;
     width: 100%;
     background-size: cover;
+    font-family: 'Ubuntu Mono', monospace;
+
 
 }
 
@@ -436,18 +451,19 @@ footer{
 
 }
 
-#connectMe:hover{
+/* #connectMe:hover{
     /* border:2px solid #96B3D9; */
-    transition: 1s;
+    /* transition: 1s; */
     /* border-radius: 15%; */
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     /* box-shadow: inset 0 0 0 2px #96B3D9; */
 
-}
+/* } */
 
 #githubLink:hover{
     transition: 1s;
     transform: scale(1.25);
+    letter-spacing: 3px;
 }
 
 #scrollTop{
