@@ -426,6 +426,10 @@ html, body{
     
 }
 
+h5{
+    font-weight: bolder;
+}
+
 #portfolioItems{
     padding: 5px;
 }
