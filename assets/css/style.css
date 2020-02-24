@@ -370,7 +370,6 @@ html, body{
     transform: rotate(1080deg);
     transition: all 3s;
 
-
 }
 
 #landingText h1{
@@ -384,6 +383,14 @@ html, body{
 
 .padding img{
     width: 100%;
+}
+
+#brandStatement {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: larger;
+    font-style: italic;
+    font-weight: bolder;
+
 }
 
 #weatherForcast{
