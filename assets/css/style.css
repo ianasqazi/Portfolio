@@ -356,9 +356,6 @@ html, body{
     
 }
 
-/* #landingText h1{
-    font-family: 'Cedarville Cursive', cursive;
-} */
 
 #gitIcon{
     width: 80px;
@@ -386,11 +383,11 @@ html, body{
 }
 
 #brandStatement {
+    color: #F2F2F2 !important;
     font-family: 'Ubuntu Mono', monospace;
     font-size: larger;
     font-style: italic;
     font-weight: bolder;
-
 }
 
 #weatherForcast{
@@ -414,27 +411,29 @@ html, body{
 /* Skill Set Section  */
 
 #skillSetSection{
-    background-color:#F2F2F2;
+    background-color:#6DBDFF;
     height: 100%;
     position: relative;
     width: 100%;
     background-size: cover;
     font-family: 'Ubuntu Mono', monospace;
-
 }
 
-/* h4{
-    color: red;
-} */
+#expertiseRotate{
+    color : white;
+}
+
+.txt-rotate{
+    color:red
+}
+
 
 /* Portfolio Section  */
 
 #portfolioSection{
-    background-color: #085CA6;
-    color: #F2F2F2;
-    font-family: 'Ubuntu Mono', monospace;
-
-    
+    background-color: #F2CAA7;
+    color: #023059;
+    font-family: 'Ubuntu Mono', monospace;    
 }
 
 h5{
@@ -447,6 +446,10 @@ h5{
 
 #portfolioItems img{
     height: 250px;
+}
+
+.btn-primary {
+    background-color: #023059;
 }
 
 #portfolioItems p{
@@ -465,7 +468,7 @@ footer{
     width: 100%;
     padding: 5% 5% 10% 5%;
     color:#F2F2F2;
-    background-color: #233278;
+    background-color: #023059;
     height: 100%;
     position: relative;
     width: 100%;
