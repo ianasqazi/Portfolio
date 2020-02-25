@@ -416,7 +416,7 @@ html, body{
 
 #skillSetSection{
     /* background-color:#6DBDFF; */
-    height: 70%;
+    height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
