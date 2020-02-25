@@ -356,6 +356,10 @@ html, body{
     
 }
 
+#collaborateBtn{
+    font-family: 'Ubuntu Mono', monospace;
+    border-color: purple;
+}
 
 #gitIcon{
     width: 80px;
