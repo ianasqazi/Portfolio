@@ -554,9 +554,7 @@ footer{
 /* } */
 
 #githubLink:hover{
-    transition: 1s;
-    transform: scale(1.25);
-    letter-spacing: 3px;
+
 }
 
 #scrollTop{
@@ -579,7 +577,6 @@ footer{
 
 .fab:hover, .fas:hover{
     transition: all 300ms ease-in-out;
-
     color: #F2CAA7;
     text-decoration: none;
     transform: scale(2);
@@ -591,8 +588,8 @@ footer{
 
 
 #footerGitIcon{
-    height: 150px;
-    width: 100px;
+    width: 80px;
+    height: 50px;
 }
 
 /* ========================================= */
@@ -631,10 +628,17 @@ footer{
         height: 50px;
         padding: 5px;
     }
-    #footerGitIcon{
-        height: 50%;
-        width: 50%;
+    #portfolioSection p{
+        font-size: small;
     }
+    #volunteeringSection h4, #volunteeringSection a{
+        font-size: small;
+    }
+    #footerGitIcon{
+        width: 40px;
+        height: 35px;
+    }
+
 
 
   }
