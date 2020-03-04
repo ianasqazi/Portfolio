@@ -456,10 +456,15 @@ html, body{
 } */
 
 #expertiseRotate{
+    
     color : darkgray;
+    font-weight: bolder;
+
+
 }
 
 .txt-rotate{
+    font-size: 40px;
     color:red
 }
 
@@ -477,7 +482,7 @@ h5{
 }
 
 #portfolioItems{
-    padding: 5px;
+    padding: 30px;
 }
 
 #portfolioItems img{
@@ -493,8 +498,8 @@ h5{
 }
 
 #langIcon{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     padding: 5px;
 }
 
@@ -588,8 +593,19 @@ footer{
 
 
 #footerGitIcon{
-    width: 80px;
-    height: 50px;
+    width: 75px;
+    height: 70px;
+}
+
+#footerNoteSpan{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #F2CAA7;    }
+    49%{    color: #F2CAA7; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #F2CAA7;    }
 }
 
 /* ========================================= */
@@ -608,6 +624,11 @@ footer{
 
 @media screen and (max-width: 767px) {
 
+    #langIcon{
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
   }
 
 /* Media query for max width : 640px  */
