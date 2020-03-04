@@ -50,8 +50,6 @@ html, body{
     text-decoration: none;
 }
 
-
-
 .fa-bars{
     transform: none !important;
     border-color:#F2F2F2;
@@ -348,6 +346,9 @@ html, body{
     vertical-align: center;
 }
 
+#jobTitle{
+    font-size: 18px;
+}
 
 #landingText{
     display: table-cell;
@@ -430,6 +431,10 @@ html, body{
 }
 
 #skillSetHeading{
+    font-size: 50px;
+}
+
+#portfolioSetHeading{
     font-size: 50px;
 }
 
@@ -520,10 +525,8 @@ footer{
 }
 
 #myInfo:hover{
-    border:2px solid #96B3D9;
     transition: 1s;
-    border-radius: 10%;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 #scrollTop{
@@ -600,16 +603,16 @@ footer{
 /* Media query for max width : 640px  */
 
 @media screen and (max-width: 639px) {
-    #landingText h1{
+    /* #landingText h1{
         font-size: 300%;
         font-weight: 500;
-    }
+    } */
     #jobTitle{
-        font-size: small;
+        font-size: 15px;
     }
-    #collaborateBtn{
+    /* #collaborateBtn{
         display: none;
-    }
+    } */
     .col-sm-4 h3{
         display: none;
     }
@@ -632,7 +635,4 @@ footer{
         height: 35px;
     }
   }
-  @media screen and (max-width: 500px) {
 
-  
-}
