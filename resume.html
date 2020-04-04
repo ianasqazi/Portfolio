@@ -20,6 +20,9 @@
     <!-- CSS  -->
     <link href="assets/css/resumeStyle.css" rel="stylesheet">
 
+    <!-- PDF CONVERTER  -->
+
+
 
     <title>Anas Qazi - Resume</title>
 </head>
@@ -27,7 +30,7 @@
 
 <!-- NAVBAR  -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
     <a class="navbar-brand" href="#">Resume</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,31 +38,20 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+      </ul>
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
+   
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <button type="button" class="btn btn-dark">Download</button>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+
     </div>
   </nav>
 
@@ -75,9 +67,9 @@
                     <a href="tel:647-581-7770"><span>647-581-7770</span></a> | 
                     <a href="mailto:ianasqazi@gmail.com"><span>ianasqazi@gmail.com</span></a>
                     <br>
-                    <a href="https://github.com/ianasqazi"><i class="fab fa-github"></i></a>
-                    <a href="https://ianasqazi.ca/"><i class="fas fa-code"></i></a>
-                    <a href="https://www.linkedin.com/in/anasqazi/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ianasqazi"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://ianasqazi.ca/"><i class="fas fa-code fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/anasqazi/"><i class="fab fa-linkedin fa-2x"></i></a>
                     <br>                    
                 </div>
 
@@ -151,6 +143,8 @@
         </div>
     </div>
 
+    <br>
+
     <!-- PROJECTS SECTION  -->
 
     <div class="padding">
@@ -162,35 +156,121 @@
                 </div>
             </div>
 
+            <br>
+
             <div class="row">
-                <div class="col">
-                    <table class="table table-borderless">
 
-                        <tbody>
-                            <tr>
-                                <th class="align-middle" scope="row" colspan="1">Languages</th>
-                                <td>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ducimus enim, harum quis fugit saepe ad vel earum cupiditate, aspernatur at quaerat iusto, sit temporibus quas amet aperiam voluptatibus ab.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam veritatis ab sequi aperiam ipsa suscipit consectetur, eligendi soluta cupiditate quibusdam laudantium, perferendis harum fuga excepturi a quo, illo officia! Reiciendis?
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod at nesciunt et vero, ipsum error quidem officiis magni ratione iure! Quod veritatis illum nisi laudantium autem quis hic adipisci fugiat?
-                                </td>
-                            </tr>
- 
-                        </tbody>
-
-                    </table>
+                <div class="col-2">
+                    <h6>Jobs & Dragons</h6>
                 </div>
 
+                <div class="col-7">
+                    <ul>
+                        <li>Full stack job search application built in a role-playing game (RPG) format to make job hunt exciting. Each player (job applicant) will receive series of quests to complete up on login. On completion of each level, you achieve points. A player has to successfully complete all the levels in order to be eligible to apply jobs</li>
+                        <li>Acted as a team member in collaborating on git along with 5 other members to implement an authentication system using Auth0 and managed its state throughout its life cycle. Additionally, created route for job listings module and its associated features. Built responsive front-end of the with React with Materialized CSS</li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-dark" href="https://jobs-and-dragons.herokuapp.com/" target="_blank">GO TO APP</a>
+                        <a class="btn btn-dark" href="https://github.com/Winyumi/jobs-and-dragons" target="_blank">VIEW CODE GITHUB</a>
+                    </div>
+                </div>
 
+                <div class="col-3">
+                    <h6>Technologies Used</h6>
+                    <p>React (Hooks, Router, Private Router, Context API), Express.js, Node.js, MongoDB, Mongoose, Auth0, GitHub API, Authentic jobs API and Materialized CSS.</p>
+
+                </div>
 
             </div>  
+
+            <br>
+
+
+            <div class="row">
+
+                <div class="col-2">
+                    <h6>Spotify Player</h6>
+                </div>
+
+                <div class="col-7">
+                    <ul>
+                        <li>Built a cross platform application to search for songs using filters like name or artists</li>
+                        <li>Motivated to understand the building of a native mobile app which directly interact with the API without depending on middleware such as plugins and WebViews</li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-dark" href="https://expo.io/@ianasqazi/spotify" target="_blank">GO TO APP</a>
+                        <a class="btn btn-dark" href="https://github.com/ianasqazi/spotify" target="_blank">VIEW CODE GITHUB</a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <h6>Technologies Used</h6>
+                    <p>React, React Native, React Dom, Expo and Spotify API</p>
+                </div>
+
+            </div> 
+
+            <br>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <h6>Google Books</h6>
+                </div>
+
+                <div class="col-7">
+                    <ul>
+                        <li>Full stack book search application where users can search and buy e-books directly from the Google books website. Users can save their favorites books if they wish to purchase later</li>
+                        <li>Built the application on the concept of Google’s materialize design for users to have a similar UI/UX experience</li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-dark" href="https://gbooksreact.herokuapp.com/" target="_blank">GO TO APP</a>
+                        <a class="btn btn-dark" href="https://github.com/ianasqazi/gbooks-react" target="_blank">VIEW CODE GITHUB</a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <h6>Technologies Used</h6>
+                    <p>React, React Router Dom, Express.js, Node.js, MongoDB, Mongoose, Axios, Google Books API and Materialized CSS</p>
+                </div>
+
+            </div> 
+
+            <br>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <h6>Employee Directory</h6>
+                </div>
+
+                <div class="col-7">
+                    <ul>
+                        <li>Developed an application to manage contact details of employees in a company. User can search using filters like Name, Phone, email, DOB etc</li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-dark" href="https://emp-dir-react.herokuapp.com/" target="_blank">GO TO APP</a>
+                        <a class="btn btn-dark" href="https://github.com/ianasqazi/emp-dir-react" target="_blank">VIEW CODE GITHUB</a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <h6>Technologies Used</h6>
+                    <p>React, React Dom, Bootstrap, Axios and random user’s API</p>
+                </div>
+
+            </div> 
+
+            <br>
 
         </div>
     </div>
 
+    <br>
+
    <!-- PROFESSIONAL EXPERIENCE SECTION  -->
 
-   <div class="padding">
+    <div class="padding">
     <div class="container-fluid" id="timelineSection">
         
         <div class="row">
@@ -205,6 +285,7 @@
                     <div class="timelineContainer left">
                       <div class="content">
                           <h4 class="text-center">Jan 2017 - Mar 2019</h4>
+                          <h5 class="text-center">Company : Bank Muscat</h5>
                         <div class="card">
                             <div class="card-header text-center">Sr. Database Administrator</div>
                             <div class="card-body">
@@ -265,6 +346,7 @@
                     <div class="timelineContainer right">
                       <div class="content">
                         <h4 class="text-center">Jul 2014 - Jan 2017</h4>
+                        <h5 class="text-center">Company : Progress Ways Information Technologies</h5>
 
                         <div class="card">
                             <div class="card-header text-center">Implementation of Audit Vault and Database Firewall (AVDF)</div>
@@ -342,7 +424,9 @@
         </div>  
 
     </div>
-</div>
+    </div>
+
+    <br>
     <!-- EDUCATION SECTION  -->
     
     <div class="padding">
@@ -393,6 +477,10 @@
 
         </div>
     </div>
+
+    <br>
+
+    <!-- SCRIPT  -->
 
 </body>
 </html>
