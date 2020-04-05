@@ -529,6 +529,10 @@ footer{
     font-family: 'Ubuntu Mono', monospace;
 }
 
+#myInfo p{
+    font-size: larger;
+}
+
 #myInfo:hover{
     transition: 1s;
     letter-spacing: 3px;
