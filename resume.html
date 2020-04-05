@@ -22,7 +22,21 @@
 
     <!-- PDF CONVERTER  -->
 
+    <!-- jQuery library -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>  
 
+    <!-- jsPDF library -->
+    <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  
+
+    <!-- HTML 2 CANVAS  -->
+    <script src="./assets/js/html2canvas.js"></script>
+    <script src="./assets/js/html2pdf.min.js"></script>
+    
 
     <title>Anas Qazi - Resume</title>
 </head>
@@ -48,7 +62,7 @@
         </li>
    
         <li class="nav-item">
-            <!-- <button type="button" class="btn btn-dark">Download</button> -->
+            <!-- <button type="button" class="btn btn-dark" onclick="generatePDF()">Download</button> -->
         </li>
       </ul>
 
@@ -479,6 +493,39 @@
     <br>
 
     <!-- SCRIPT  -->
+
+    <script>
+        function generatePDF() {
+            var doc = new jsPDF();
+ 
+            var source = $("body")[0];
+            doc.fromHTML(source);
+
+            doc.save('Anas Qazi - Resume.pdf');
+
+
+        }
+    </script>
+
+    <script>
+        function h2C(){
+            html2canvas(document.body).then(function(canvas) {
+
+                // var imgData = 'data:image/jpeg;base64,'+ Base64.encode(canvas);
+                var imgData = canvas;
+
+                var doc = new jsPDF();
+        
+                var source = canvas;
+                doc.addImage(imgData, 'JPEG', 10, 10, 180, 800);
+
+                doc.save('Anas Qazi - Resume.pdf');
+
+
+            // document.body.appendChild(canvas);
+        });
+    }
+    </script>
 
 </body>
 </html>
