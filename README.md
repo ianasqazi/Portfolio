@@ -1,6 +1,15 @@
 # Portfolio @ ianasqazi.ca
 
-https://ianasqazi.ca
+**[Go To Website : https://ianasqazi.ca](https://ianasqazi.ca/)** 
 
-Repository for My Portfolio Page
- https://ianasqazi.github.io/Portfolio/
+
+
+## Anas Qazi Resume 
+
+**[Anas - Qazi - RESUME](https://ianasqazi.ca/resume.html)** 
+
+
+
+## Repository for My Portfolio Page
+
+**[GITHUB REPO : https://github.com/ianasqazi/Portfolio](https://github.com/ianasqazi/Portfolio)** 
