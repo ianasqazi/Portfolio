@@ -1,10 +1,6 @@
 # Portfolio @ ianasqazi.ca
 
-<<<<<<< HEAD
 **[Go To Website : https://ianasqazi.ca](https://ianasqazi.ca/)** 
-=======
-http://ianasqazi.ca
->>>>>>> 77a881d088277cb62950a6ba819fa86f7539cda0
 
 
 
