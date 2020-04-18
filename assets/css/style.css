@@ -460,7 +460,7 @@ h5 {
 
 .card-deck {
   height: 100%;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card-header {
@@ -473,15 +473,12 @@ h5 {
 }
 
 .btn-dark {
+  background-color: #111e6c;
   margin: 5px;
 }
 
 .btn-primary {
   background-color: #023059;
-}
-
-#portfolioItems p {
-  padding: 10px;
 }
 
 #langIcon {
