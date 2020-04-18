@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,19 @@
     <link rel='icon' href='favicon.ico' type='image/x-icon'>
 
     <!-- Bootstrap jQuery / Popper / JS  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
     <!-- Bootstrap CDN  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Fontawesome CDN  -->
     <script src="https://kit.fontawesome.com/96719df605.js" crossorigin="anonymous"></script>
@@ -23,68 +31,70 @@
     <!-- PDF CONVERTER  -->
 
     <!-- jQuery library -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- jsPDF library -->
     <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
 
     <!-- HTML 2 CANVAS  -->
     <script src="./assets/js/html2canvas.js"></script>
     <script src="./assets/js/html2pdf.min.js"></script>
-    
+
 
     <title>Anas Qazi - Resume</title>
 </head>
+
 <body>
 
-<!-- NAVBAR  -->
+    <!-- NAVBAR  -->
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" href="#">Resume</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <!-- <li class="nav-item active">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Resume</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
           <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li> -->
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-   
-        <li class="nav-item">
-            <!-- <button type="button" class="btn btn-dark" onclick="generatePDF()">Download</button> -->
-        </li>
-      </ul>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
 
-    </div>
-  </nav>
+                <li class="nav-item">
+                    <!-- <button type="button" class="btn btn-dark" onclick="generatePDF()">Download</button> -->
+                </li>
+            </ul>
 
-<!-- HEADER INFORMATION SECTION  -->
+        </div>
+    </nav>
+
+    <!-- HEADER INFORMATION SECTION  -->
 
     <div class="padding">
-        
+
         <div class="container-fluid" id="headerSection">
             <div class="row">
                 <div class="col text-center">
                     <h2>Anas Qazi</h2>
-                    <a href="https://goo.gl/maps/Pow2ANRwSmM8dNJC6"><span id="headerDetails">Toronto, Canada</span></a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
-                    <a href="tel:647-581-7770"><span id="headerDetails">647-581-7770</span></a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <a href="https://goo.gl/maps/Pow2ANRwSmM8dNJC6"><span id="headerDetails">Toronto,
+                            Canada</span></a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <a href="tel:647-581-7770"><span id="headerDetails">647-581-7770</span></a>&nbsp;&nbsp;&nbsp; |
+                    &nbsp;&nbsp;&nbsp;
                     <a href="mailto:ianasqazi@gmail.com"><span id="headerDetails">ianasqazi@gmail.com</span></a>
                     <br>
                     <a href="https://github.com/ianasqazi"><i class="fab fa-github fa-2x"></i></a>
                     <a href="https://ianasqazi.ca/"><i class="fas fa-code fa-2x"></i></a>
                     <a href="https://www.linkedin.com/in/anasqazi/"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <br>                    
+                    <br>
                 </div>
 
             </div>
@@ -97,13 +107,17 @@
     <!-- OBJECTIVE SECTION  -->
 
     <div class="padding">
-        
+
         <div class="container-fluid" id="objectiveSection">
             <div class="row">
 
                 <div class="col">
-                    <p>Full Stack Web Developer with 5 years of experience in IT industry. Skilled at developing responsive web applications using MERN Stack, React-Native, Angular, jQuery, Bootstrap and other NPM libraries.
-                    Self-motivated, quick learner and analytical thinker with passion to write clean code and learn cutting edge web technologies. Regularly participated and volunteered at university hackathons and web enthusiast meetups.</p>
+                    <p>Full Stack Web Developer with 5 years of experience in IT industry. Skilled at developing
+                        responsive web applications using MERN Stack, React-Native, Angular, jQuery, Bootstrap and other
+                        NPM libraries.
+                        Self-motivated, quick learner and analytical thinker with passion to write clean code and learn
+                        cutting edge web technologies. Regularly participated and volunteered at university hackathons
+                        and web enthusiast meetups.</p>
                 </div>
 
             </div>
@@ -113,7 +127,7 @@
     </div>
 
     <br>
-    
+
     <!-- TECHNICAL SKILLS SECTION  -->
 
     <div class="padding">
@@ -123,38 +137,39 @@
                     <h5>TECHNICAL SKILLS</h5>
                 </div>
             </div>
-        <div class="row">
-            <div class="col">
+            <div class="row">
+                <div class="col">
 
-                <table class="table table-hover">
+                    <table class="table table-hover">
 
-                    <tbody>
-                      <tr>
-                        <th scope="row" colspan="1">Languages</th>
-                        <td>JavaScript, HTML, CSS, SQL</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Frameworks / Libraries</th>
-                        <td>React, Express, Node, , Vue, jQuery, Bootstrap, Materialize, AJAX, Axios, Handlebars</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Databases / ORM</th>
-                        <td>Oracle, Mongo DB, MySQL, Sequelize, Mongoose, Jaws DB</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Collaboration / Deployment</th>
-                        <td>Git, GitHub, Heroku, Travis</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Operating Systems</th>
-                        <td>Linux, Unix, HP-UX, Solaris, Mac OS, Windows</td>
-                      </tr>
-                    </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row" colspan="1">Languages</th>
+                                <td>JavaScript, HTML, CSS, SQL</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Frameworks / Libraries</th>
+                                <td>React, Express, Node, , Vue, jQuery, Bootstrap, Materialize, AJAX, Axios, Handlebars
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Databases / ORM</th>
+                                <td>Oracle, Mongo DB, MySQL, Sequelize, Mongoose, Jaws DB</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Collaboration / Deployment</th>
+                                <td>Git, GitHub, Heroku, Travis</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Operating Systems</th>
+                                <td>Linux, Unix, HP-UX, Solaris, Mac OS, Windows</td>
+                            </tr>
+                        </tbody>
 
-                  </table>
+                    </table>
 
+                </div>
             </div>
-        </div>
         </div>
     </div>
 
@@ -164,7 +179,7 @@
 
     <div class="padding">
         <div class="container-fluid" id="timelineSection">
-            
+
             <div class="row">
                 <div class="col">
                     <h5>PROJECTS</h5>
@@ -181,23 +196,30 @@
 
                 <div class="col-7">
                     <ul>
-                        <li>In the current state of the world during Corona virus pandemic and with many of us in lockdown, I thought it would be a good idea to build a COVID Dashboard with MAP showing statistics of increase of corona virus around the world.</li>
-                        <li>Hover over the countries to see additional details for each country in tooltips. Used the API's which returns a list of countries and provinces with COVID-19 stats. Then, mapped the data with the co-ordinates in the JSON to the map along with colour schemes and circle radius size based on the number. 
-                        </li>
+                        <li>In the current state of the world during Corona virus pandemic and with many of us in
+                            lockdown, I thought it would be a good idea to build a COVID Dashboard with MAP showing
+                            statistics of increase of corona virus around the world.</li>
+                        <li>Hover over the countries to see additional details for each country in tooltips. Used the
+                            API's which returns a list of countries and provinces with COVID-19 stats. Then, mapped the
+                            data with the co-ordinates in the JSON to the map along with colour schemes and circle
+                            radius size based on the number.</li>
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-sm btn-dark" href="https://codesandbox.io/s/covid19-dashboard-kmv7r" target="_blank">GO TO APP</a>
-                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/covid-dashboard" target="_blank">VIEW CODE GITHUB</a>
+                        <a class="btn btn-sm btn-dark" href="https://codesandbox.io/s/covid19-dashboard-kmv7r"
+                            target="_blank">GO TO APP</a>
+                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/covid-dashboard"
+                            target="_blank">VIEW CODE GITHUB</a>
                     </div>
                 </div>
 
                 <div class="col-3">
                     <h6>Technologies Used</h6>
-                    <p>React, React-router-dom, Reactstrap, Node.js, ReactLoadingg, MAPBOX-GL, Axios, SWR, Country-code-lookup, Comma-number, Corona Virus updates API's.</p>
+                    <p>React, React-router-dom, Reactstrap, Node.js, ReactLoadingg, MAPBOX-GL, Axios, SWR,
+                        Country-code-lookup, Comma-number, Corona Virus updates API's.</p>
 
                 </div>
 
-            </div>  
+            </div>
 
             <br>
 
@@ -210,22 +232,31 @@
 
                 <div class="col-7">
                     <ul>
-                        <li>Full stack job search application built in a role-playing game (RPG) format to make job hunt exciting. Each player (job applicant) will receive series of quests to complete up on login. On completion of each level, you achieve points. A player has to successfully complete all the levels in order to be eligible to apply jobs</li>
-                        <li>Acted as a team member in collaborating on git along with 5 other members to implement an authentication system using Auth0 and managed its state throughout its life cycle. Additionally, created route for job listings module and its associated features. Built responsive front-end of the with React with Materialized CSS</li>
+                        <li>Full stack job search application built in a role-playing game (RPG) format to make job hunt
+                            exciting. Each player (job applicant) will receive series of quests to complete up on login.
+                            On completion of each level, you achieve points. A player has to successfully complete all
+                            the levels in order to be eligible to apply jobs</li>
+                        <li>Acted as a team member in collaborating on git along with 5 other members to implement an
+                            authentication system using Auth0 and managed its state throughout its life cycle.
+                            Additionally, created route for job listings module and its associated features. Built
+                            responsive front-end of the with React with Materialized CSS</li>
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-sm btn-dark" href="https://jobs-and-dragons.herokuapp.com/" target="_blank">GO TO APP</a>
-                        <a class="btn btn-sm btn-dark" href="https://github.com/Winyumi/jobs-and-dragons" target="_blank">VIEW CODE GITHUB</a>
+                        <a class="btn btn-sm btn-dark" href="https://jobs-and-dragons.herokuapp.com/" target="_blank">GO
+                            TO APP</a>
+                        <a class="btn btn-sm btn-dark" href="https://github.com/Winyumi/jobs-and-dragons"
+                            target="_blank">VIEW CODE GITHUB</a>
                     </div>
                 </div>
 
                 <div class="col-3">
                     <h6>Technologies Used</h6>
-                    <p>React (Hooks, Router, Private Router, Context API), Express.js, Node.js, MongoDB, Mongoose, Auth0, GitHub API, Authentic jobs API and Materialized CSS.</p>
+                    <p>React (Hooks, Router, Private Router, Context API), Express.js, Node.js, MongoDB, Mongoose,
+                        Auth0, GitHub API, Authentic jobs API and Materialized CSS.</p>
 
                 </div>
 
-            </div>  
+            </div>
 
             <br>
 
@@ -238,12 +269,16 @@
 
                 <div class="col-7">
                     <ul>
-                        <li>Built a cross platform application to search for songs using filters like name or artists</li>
-                        <li>Motivated to understand the building of a native mobile app which directly interact with the API without depending on middleware such as plugins and WebViews</li>
+                        <li>Built a cross platform application to search for songs using filters like name or artists
+                        </li>
+                        <li>Motivated to understand the building of a native mobile app which directly interact with the
+                            API without depending on middleware such as plugins and WebViews</li>
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-sm btn-dark" href="https://expo.io/@ianasqazi/spotify" target="_blank">GO TO APP</a>
-                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/spotify" target="_blank">VIEW CODE GITHUB</a>
+                        <a class="btn btn-sm btn-dark" href="https://expo.io/@ianasqazi/spotify" target="_blank">GO TO
+                            APP</a>
+                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/spotify" target="_blank">VIEW
+                            CODE GITHUB</a>
                     </div>
                 </div>
 
@@ -252,7 +287,7 @@
                     <p>React, React Native, React Dom, Expo and Spotify API</p>
                 </div>
 
-            </div> 
+            </div>
 
             <br>
 
@@ -264,21 +299,27 @@
 
                 <div class="col-7">
                     <ul>
-                        <li>Full stack book search application where users can search and buy e-books directly from the Google books website. Users can save their favorites books if they wish to purchase later</li>
-                        <li>Built the application on the concept of Google’s materialize design for users to have a similar UI/UX experience</li>
+                        <li>Full stack book search application where users can search and buy e-books directly from the
+                            Google books website. Users can save their favorites books if they wish to purchase later
+                        </li>
+                        <li>Built the application on the concept of Google’s materialize design for users to have a
+                            similar UI/UX experience</li>
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-sm btn-dark" href="https://gbooksreact.herokuapp.com/" target="_blank">GO TO APP</a>
-                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/gbooks-react" target="_blank">VIEW CODE GITHUB</a>
+                        <a class="btn btn-sm btn-dark" href="https://gbooksreact.herokuapp.com/" target="_blank">GO TO
+                            APP</a>
+                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/gbooks-react"
+                            target="_blank">VIEW CODE GITHUB</a>
                     </div>
                 </div>
 
                 <div class="col-3">
                     <h6>Technologies Used</h6>
-                    <p>React, React Router Dom, Express.js, Node.js, MongoDB, Mongoose, Axios, Google Books API and Materialized CSS</p>
+                    <p>React, React Router Dom, Express.js, Node.js, MongoDB, Mongoose, Axios, Google Books API and
+                        Materialized CSS</p>
                 </div>
 
-            </div> 
+            </div>
 
             <br>
 
@@ -290,11 +331,14 @@
 
                 <div class="col-7">
                     <ul>
-                        <li>Developed an application to manage contact details of employees in a company. User can search using filters like Name, Phone, email, DOB etc</li>
+                        <li>Developed an application to manage contact details of employees in a company. User can
+                            search using filters like Name, Phone, email, DOB etc</li>
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-sm btn-dark" href="https://emp-dir-react.herokuapp.com/" target="_blank">GO TO APP</a>
-                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/emp-dir-react" target="_blank">VIEW CODE GITHUB</a>
+                        <a class="btn btn-sm btn-dark" href="https://emp-dir-react.herokuapp.com/" target="_blank">GO TO
+                            APP</a>
+                        <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/emp-dir-react"
+                            target="_blank">VIEW CODE GITHUB</a>
                     </div>
                 </div>
 
@@ -303,7 +347,7 @@
                     <p>React, React Dom, Bootstrap, Axios and random user’s API</p>
                 </div>
 
-            </div> 
+            </div>
 
             <br>
 
@@ -312,170 +356,227 @@
 
     <br>
 
-   <!-- PROFESSIONAL EXPERIENCE SECTION  -->
+    <!-- PROFESSIONAL EXPERIENCE SECTION  -->
 
     <div class="padding">
-    <div class="container-fluid" id="timelineSection">
-        
-        <div class="row">
-            <div class="col">
-                <h5>PROFESSIONAL EXPERIENCE</h5>
+        <div class="container-fluid" id="timelineSection">
+
+            <div class="row">
+                <div class="col">
+                    <h5>PROFESSIONAL EXPERIENCE</h5>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="timeline">
+                        <div class="timelineContainer left">
+                            <div class="content">
+                                <h4 class="text-center">Jan 2017 - Mar 2019</h4>
+                                <h5 class="text-center">Company : Bank Muscat</h5>
+                                <div class="card">
+                                    <div class="card-header text-center">Sr. Database Administrator</div>
+                                    <div class="card-body">
+                                        <h6 class="card-title">Responsibilities :</h6>
+
+                                        <ul class="card-text">
+                                            <li>Daily database administration for 3 production and 9 non-production
+                                                servers</li>
+                                            <li>Applying new government regulations and maintaining banking standards
+                                            </li>
+                                            <li>Maintaining integrity in between database, application, network and
+                                                external payment gateways</li>
+                                            <li>Maintained integrity in between database, application, network and
+                                                external systems like SWIFT, SADAD and SARIE Payment gateways to ensure
+                                                smooth running and availability in the organization</li>
+                                            <li>Archiving historical data more than 10 years old</li>
+                                        </ul>
+                                        <h6 class="card-title">Environment :</h6>
+                                        <p class="card-text">Oracle Database 11g RAC, Linux, HP-UX, Solaris, Windows
+                                            Server 2012</p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <div class="card-header text-center">Value Added Tax (VAT) Regulation Implementation
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">The VAT framework was newly introduced and implemented in
+                                            less than 3 months from the time the GCC VAT regulation was released.</p>
+                                        <h6 class="card-title">Achievements :</h6>
+                                        <ul class="card-text">
+                                            <li>Implemented GCC VAT framework provided by VAT governing public bodies in
+                                                banking infrastructure in a team environment comprising of members from
+                                                departments like IT, System & Procedures, Corporate, Finance,
+                                                Compliance, Treasury, Audit, Operations & Retail</li>
+                                            <li>Assessed risks and its implications of implementing VAT on existing
+                                                purchases and contracts under IT department related to databases and
+                                                oracle Support contracts to ensure this implementation is successful for
+                                                the past as well as upcoming purchases/contracts</li>
+                                            <li>Assisted the application team in identifying the risks for all
+                                                on-boarding business functions, contractual obligations, indemnities and
+                                                responsibilities from a VAT perspective before Go-Live</li>
+                                            <li>Wrote scripts in SQL/PL-SQL to apply in ERP systems, daily transactions
+                                                and EOD reports to reflect the accurate VAT calculations</li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <div class="card-header text-center">PRTG Network Monitor Implementation</div>
+                                    <div class="card-body">
+                                        <p class="card-text">PRTG is a monitoring tool which monitors all systems,
+                                            devices, traffic and applications of IT infrastructure in the company.</p>
+
+                                        <h6 class="card-title">Achievements :</h6>
+                                        <ul class="card-text">
+                                            <li>Single handedly implemented tool PRTG Network monitoring system to
+                                                ensure we have 100% availability of systems and pre-emptively resolve
+                                                before any system goes down</li>
+                                            <li>Deployed around 500 sensors for traffic, packets, applications,
+                                                bandwidth, cloud services, databases, virtual environments, uptime,
+                                                ports, IPs, hardware, security, web services, disk usage, physical
+                                                environments to start monitoring</li>
+                                            <li>Avoided performance bottlenecks and proactively deliver better quality
+                                                of service</li>
+                                            <li>Single Page dashboard helped all users showing alerts as pop-up layers
+                                                which helped users to take pre-emptive actions to ensure the system is
+                                                running smoothly</li>
+                                            <li>Configured reports for management and end users to track issues
+                                                proactive and rectify before it occurs the next time along with e-mail
+                                                and message alerts specific to each domain users</li>
+                                        </ul>
+                                        <h6 class="card-title">Environment :</h6>
+                                        <p class="card-text">Solaris 10, Oracle 11g RAC, Oracle EBS R12.1.2, AVDF 12.1,
+                                            Enterprise Manager 12c</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="timelineContainer right">
+                            <div class="content">
+                                <h4 class="text-center">Jul 2014 - Jan 2017</h4>
+                                <h5 class="text-center">Company : Progress Ways Information Technologies</h5>
+
+                                <div class="card">
+                                    <div class="card-header text-center">Implementation of Audit Vault and Database
+                                        Firewall (AVDF)</div>
+                                    <div class="card-body">
+                                        <h6 class="card-title">Achievements :</h6>
+                                        <ul class="card-text">
+                                            <li>Collected requirements of hardware specification, network, proxies,
+                                                firewall and capacity</li>
+                                            <li>Installed Oracle tool AVDF on stand-alone HP ProLiant Server hardware
+                                                for test environment</li>
+                                            <li>Integrated AVDF with EBS for logging information of changes made in
+                                                application level</li>
+                                            <li>Installed Oracle Enterprise Manager for Performance Monitoring and
+                                                database monitoring of databases and automation of tasks to avoid manual
+                                                intervention by using performance monitor</li>
+                                        </ul>
+                                        <h6 class="card-title">Environment :</h6>
+                                        <p class="card-text">Solaris 10, Oracle 11g RAC, Oracle EBS R12.1.2, AVDF 12.1,
+                                            Enterprise Manager 12c</p>
+
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <div class="card-header text-center">Implementation of Database Firewall (DBV)</div>
+                                    <div class="card-body">
+                                        <h6 class="card-title">Achievements :</h6>
+                                        <ul class="card-text">
+                                            <li>Identified and gathered information of all the databases (Transactional
+                                                & EBS DB) on which DB Vault needs to be implemented, and security
+                                                privileges according to users in the department</li>
+                                            <li>Data mapping of users, roles and responsibility for preparation of
+                                                Separation of Duty Matrix and Realms for production, development and
+                                                testing environments separately</li>
+                                        </ul>
+                                        <h6 class="card-title">Environment :</h6>
+                                        <p class="card-text">Solaris 10, Oracle 11gR2 RAC, DBV 11gR2, EBS 12.1.2,
+                                            Enterprise Manager 12c</p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <div class="card-header text-center">Oracle E-Business Suite Upgrade</div>
+                                    <div class="card-body">
+                                        <h6 class="card-title">Achievements :</h6>
+                                        <ul class="card-text">
+                                            <li>Gathered pre-requisites for upgrade of EBS from 12.1 to 12.2 version
+                                                starting from media, patches required for each application and database
+                                                to upgrade and test before moving to production zone</li>
+                                            <li>Installed new patches and rolled over old patches in database and
+                                                software, Fusion Middleware, Forms and Reports, WebLogic server and EBS
+                                                application using tools like Opatch, BSU (Smart Update), ADOP, Rapid
+                                                install etc</li>
+                                            <li>Performed 3 iterations of UAT of the whole upgrade procedure to reduce
+                                                downtime of production with a team of 5 members and then upgrading the
+                                                production EBS in approximately 45 hours</li>
+                                        </ul>
+                                        <h6 class="card-title">Environment :</h6>
+                                        <p class="card-text">UNIX, Solaris 10, Oracle 11g RAC, Oracle Applications R12.1
+                                            / R12.2, Oracle Fusion Middleware 11.1.1.6, Oracle 10.1.2.3 Forms & Reports,
+                                            Oracle WebLogic Server 10.3.6</p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <div class="card-header text-center">Enterprise Infrastructure Upgrade</div>
+                                    <div class="card-body">
+                                        <h6 class="card-title">Achievements :</h6>
+                                        <ul class="card-text">
+                                            <li>Gathered requirements and phase planning.</li>
+                                            <li>Preparing Testing/Development/Pre-production environments</li>
+                                            <li>Installed the OS, Database (Single node & RAC), OS patches, Database
+                                                Patches, Upgrade patches</li>
+                                            <li>Upgraded 3 single-node databases from legacy 9i/10g to 11gR2/12c HA
+                                                (RAC) Database</li>
+                                            <li>Configured Physical Standby Disaster Recovery (DR) site</li>
+                                            <li>Physical migration of Servers from old data center to new data center
+                                            </li>
+                                            <li>Complete Documentation starting from Technical Proposals, Scope of Work,
+                                                Stake Holders Document, Kick-off presentation, Minutes of Meeting,
+                                                Communication Plan, Project Plans, Test Scripts, Training Materials,
+                                                Status Reports, database design, technical hand overs</li>
+                                        </ul>
+                                        <h6 class="card-title">Environment :</h6>
+                                        <p class="card-text">Linux, HP – UX 11.31, Oracle 11g RAC, Oracle Applications
+                                            R12.1.2</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="timeline">
-                    <div class="timelineContainer left">
-                      <div class="content">
-                          <h4 class="text-center">Jan 2017 - Mar 2019</h4>
-                          <h5 class="text-center">Company : Bank Muscat</h5>
-                        <div class="card">
-                            <div class="card-header text-center">Sr. Database Administrator</div>
-                            <div class="card-body">
-                                <h6 class="card-title">Responsibilities :</h6>
-
-                                <ul class="card-text">
-                                    <li>Daily database administration for 3 production and 9 non-production servers</li>
-                                    <li>Applying new government regulations and maintaining banking standards</li>
-                                    <li>Maintaining integrity in between database, application, network and external payment gateways</li>
-                                    <li>Maintained integrity in between database, application, network and external systems like SWIFT, SADAD and SARIE Payment gateways to ensure smooth running and availability in the organization</li>
-                                    <li>Archiving historical data more than 10 years old</li>
-                                </ul>
-                                <h6 class="card-title">Environment :</h6>
-                                <p class="card-text">Oracle Database 11g RAC, Linux, HP-UX, Solaris, Windows Server 2012</p>
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="card">
-                            <div class="card-header text-center">Value Added Tax (VAT) Regulation Implementation</div>
-                            <div class="card-body">
-                                <p class="card-text">The VAT framework was newly introduced and implemented in less than 3 months from the time the GCC VAT regulation was released.</p>
-                                <h6 class="card-title">Achievements :</h6>
-                                <ul class="card-text">
-                                    <li>Implemented GCC VAT framework provided by VAT governing public bodies in banking infrastructure in a team environment comprising of members from departments like IT, System & Procedures, Corporate, Finance, Compliance, Treasury, Audit, Operations & Retail</li>
-                                    <li>Assessed risks and its implications of implementing VAT on existing purchases and contracts under IT department related to databases and oracle Support contracts to ensure this implementation is successful for the past as well as upcoming purchases/contracts</li>
-                                    <li>Assisted the application team in identifying the risks for all on-boarding business functions, contractual obligations, indemnities and responsibilities from a VAT perspective before Go-Live</li>
-                                    <li>Wrote scripts in SQL/PL-SQL to apply in ERP systems, daily transactions and EOD reports to reflect the accurate VAT calculations</li>
-                                </ul>
-                              
-
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="card">
-                            <div class="card-header text-center">PRTG Network Monitor Implementation</div>
-                            <div class="card-body">
-                                <p class="card-text">PRTG is a monitoring tool which monitors all systems, devices, traffic and applications of IT infrastructure in the company.</p>
-
-                                <h6 class="card-title">Achievements :</h6>
-                                <ul class="card-text">
-                                    <li>Single handedly implemented tool PRTG Network monitoring system to ensure we have 100% availability of systems and pre-emptively resolve before any system goes down</li>
-                                    <li>Deployed around 500 sensors for traffic, packets, applications, bandwidth, cloud services, databases, virtual environments, uptime, ports, IPs, hardware, security, web services, disk usage, physical environments to start monitoring</li>
-                                    <li>Avoided performance bottlenecks and proactively deliver better quality of service</li>
-                                    <li>Single Page dashboard helped all users showing alerts as pop-up layers which helped users to take pre-emptive actions to ensure the system is running smoothly</li>
-                                    <li>Configured reports for management and end users to track issues proactive and rectify before it occurs the next time along with e-mail and message alerts specific to each domain users</li>
-                                </ul>
-                                <h6 class="card-title">Environment :</h6>
-                                <p class="card-text">Solaris 10, Oracle 11g RAC, Oracle EBS R12.1.2, AVDF 12.1, Enterprise Manager 12c</p>
-
-                            </div>
-                        </div>
-                        
-                      </div>
-
-                    </div>
-                    <div class="timelineContainer right">
-                      <div class="content">
-                        <h4 class="text-center">Jul 2014 - Jan 2017</h4>
-                        <h5 class="text-center">Company : Progress Ways Information Technologies</h5>
-
-                        <div class="card">
-                            <div class="card-header text-center">Implementation of Audit Vault and Database Firewall (AVDF)</div>
-                            <div class="card-body">
-                                <h6 class="card-title">Achievements :</h6>
-                                <ul class="card-text">
-                                    <li>Collected requirements of hardware specification, network, proxies, firewall and capacity</li>
-                                    <li>Installed Oracle tool AVDF on stand-alone HP ProLiant Server hardware for test environment</li>
-                                    <li>Integrated AVDF with EBS for logging information of changes made in application level</li>
-                                    <li>Installed Oracle Enterprise Manager for Performance Monitoring and database monitoring of databases and automation of tasks to avoid manual intervention by using performance monitor</li>
-                                </ul>
-                                <h6 class="card-title">Environment :</h6>
-                                <p class="card-text">Solaris 10, Oracle 11g RAC, Oracle EBS R12.1.2, AVDF 12.1, Enterprise Manager 12c</p>
-
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="card">
-                            <div class="card-header text-center">Implementation of Database Firewall (DBV)</div>
-                            <div class="card-body">
-                                <h6 class="card-title">Achievements :</h6>
-                                <ul class="card-text">
-                                    <li>Identified and gathered information of all the databases (Transactional & EBS DB) on which DB Vault needs to be implemented, and security privileges according to users in the department</li>
-                                    <li>Data mapping of users, roles and responsibility for preparation of Separation of Duty Matrix and Realms for production, development and testing environments separately</li>
-                                </ul>
-                                <h6 class="card-title">Environment :</h6>
-                                <p class="card-text">Solaris 10, Oracle 11gR2 RAC, DBV 11gR2, EBS 12.1.2, Enterprise Manager 12c</p>
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="card">
-                            <div class="card-header text-center">Oracle E-Business Suite Upgrade</div>
-                            <div class="card-body">
-                                <h6 class="card-title">Achievements :</h6>
-                                <ul class="card-text">
-                                    <li>Gathered pre-requisites for upgrade of EBS from 12.1 to 12.2 version starting from media, patches required for each application and database to upgrade and test before moving to production zone</li>
-                                    <li>Installed new patches and rolled over old patches in database and software, Fusion Middleware, Forms and Reports, WebLogic server and EBS application using tools like Opatch, BSU (Smart Update), ADOP, Rapid install etc</li>
-                                    <li>Performed 3 iterations of UAT of the whole upgrade procedure to reduce downtime of production with a team of 5 members and then upgrading the production EBS in approximately 45 hours</li>
-                                </ul>
-                                <h6 class="card-title">Environment :</h6>
-                                <p class="card-text">UNIX, Solaris 10, Oracle 11g RAC, Oracle Applications R12.1 / R12.2, Oracle Fusion Middleware 11.1.1.6, Oracle 10.1.2.3 Forms & Reports, Oracle WebLogic Server 10.3.6</p>
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="card">
-                            <div class="card-header text-center">Enterprise Infrastructure Upgrade</div>
-                            <div class="card-body">
-                              <h6 class="card-title">Achievements :</h6>
-                              <ul class="card-text">
-                                  <li>Gathered requirements and phase planning.</li>
-                                  <li>Preparing Testing/Development/Pre-production environments</li>
-                                  <li>Installed the OS, Database (Single node & RAC), OS patches, Database Patches, Upgrade patches</li>
-                                  <li>Upgraded 3 single-node databases from legacy 9i/10g to 11gR2/12c HA (RAC) Database</li>
-                                  <li>Configured Physical Standby Disaster Recovery (DR) site</li>
-                                  <li>Physical migration of Servers from old data center to new data center</li>
-                                  <li>Complete Documentation starting from Technical Proposals, Scope of Work, Stake Holders Document, Kick-off presentation, Minutes of Meeting, Communication Plan, Project Plans, Test Scripts, Training Materials, Status Reports, database design, technical hand overs</li>
-                              </ul>
-                              <h6 class="card-title">Environment :</h6>
-                              <p class="card-text">Linux, HP – UX 11.31, Oracle 11g RAC, Oracle Applications R12.1.2</p>
-
-                            </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div>
-            </div>
-
-
-
-        </div>  
-
-    </div>
     </div>
 
     <br>
     <!-- EDUCATION SECTION  -->
-    
+
     <div class="padding">
         <div class="container-fluid" id="timelineSection">
-            
+
             <div class="row">
                 <div class="col">
                     <h5>EDUCATION AND CERTIFICATIONS</h5>
@@ -485,9 +586,10 @@
             <br>
 
             <div class="row">
-                
+
                 <div class="col-2 d-flex justify-content-center">
-                    <img src="./assets/images/icons/UofT-Logo-Black.png" alt="University of Toronto Logo" class="img-thumbnail" style="height: 70px; width: 50px;">
+                    <img src="./assets/images/icons/UofT-Logo-Black.png" alt="University of Toronto Logo"
+                        class="img-thumbnail" style="height: 70px; width: 50px;">
                 </div>
 
                 <div class="col-8">
@@ -497,13 +599,14 @@
                 <div class="col-2">
                     <span>2020</span>
 
-                </div>  
-            </div>  
+                </div>
+            </div>
 
             <div class="row">
-                
+
                 <div class="col-2 d-flex justify-content-center">
-                    <img src="./assets/images/icons/mu_logo.png" alt="Mumbai University Logo" class="img-thumbnail" style="height: 70px; width: 50px;">
+                    <img src="./assets/images/icons/mu_logo.png" alt="Mumbai University Logo" class="img-thumbnail"
+                        style="height: 70px; width: 50px;">
                 </div>
 
                 <div class="col-8">
@@ -513,8 +616,8 @@
                 <div class="col-2">
                     <span>2013</span>
 
-                </div>  
-            </div> 
+                </div>
+            </div>
 
         </div>
     </div>
@@ -526,7 +629,7 @@
     <script>
         function generatePDF() {
             var doc = new jsPDF();
- 
+
             var source = $("body")[0];
             doc.fromHTML(source);
 
@@ -537,24 +640,25 @@
     </script>
 
     <script>
-        function h2C(){
-            html2canvas(document.body).then(function(canvas) {
+        function h2C() {
+            html2canvas(document.body).then(function (canvas) {
 
                 // var imgData = 'data:image/jpeg;base64,'+ Base64.encode(canvas);
                 var imgData = canvas;
 
                 var doc = new jsPDF();
-        
+
                 var source = canvas;
                 doc.addImage(imgData, 'JPEG', 10, 10, 180, 800);
 
                 doc.save('Anas Qazi - Resume.pdf');
 
 
-            // document.body.appendChild(canvas);
-        });
-    }
+                // document.body.appendChild(canvas);
+            });
+        }
     </script>
 
 </body>
+
 </html>

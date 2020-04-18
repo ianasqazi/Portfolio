@@ -463,6 +463,10 @@ h5 {
   padding-bottom: 10px;
 }
 
+.btn-dark {
+  margin: 5px;
+}
+
 #portfolioItems {
   padding: 30px;
 }
