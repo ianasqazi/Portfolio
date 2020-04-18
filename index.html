@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='icon' href='favicon.ico' type='image/x-icon'>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/96719df605.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -18,12 +20,16 @@
 
     <title>ianasqazi</title>
 </head>
+
 <body>
+
+    <!-- NAVBAR  -->
 
     <div id="mainNav" class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-default fixed-top text-uppercase navbar-shrink">
             <a class="navbar-brand d-md-none" href="index.html">ANAS QAZI Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fas fa-bars"></span>
             </button>
 
@@ -31,8 +37,8 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">
-                        <i class="fa fa-home"></i> Home
-                        <span class="sr-only">(current)</span>
+                            <i class="fa fa-home"></i> Home
+                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
 
@@ -42,17 +48,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./resume.html" target="_blank">Resume</a>
                     </li>
-            
+
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#skillSetSection">Skill Set</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#portfolioSection">Portfolio</a>
-                        </li>
+                        <a class="nav-link" href="#portfolioSection">Portfolio</a>
+                    </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#footerSection">Contact Me</a>
+                        <a class="nav-link" href="#footerSection">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -60,31 +66,36 @@
     </div>
 
 
+    <!-- Landing Text HOME  -->
+
     <div id="home">
         <div class="container-fluid row" id="landingText">
             <div class="row">
-                
+
                 <div class="col-lg-6">
                     <img class="img-fluid rounded" src="assets/images/avatar.png" id="avatarIcon" alt="avatar">
                 </div>
-                
+
                 <div class="col-lg-6">
                     <h1>Anas Qazi</h1>
                     <p id="jobTitle">
-                        I am a Full Stack Web developer that has skills in BOTH front-end and back-end from all the projects built using the <b>{MERN}</b> stack.
+                        I am a Full Stack Web developer that has skills in BOTH front-end and back-end from all the
+                        projects built using the <b>{MERN}</b> stack.
                         My expertise lies in <b>Javascript, HTML, Node.js, SQL, jQuery, Bootstrap and CSS</b>.<br>
-                        I was an Oracle Consultant for 5 years implementing a variety of tools alongside Database Administration for clients in different sectors.<br>
+                        I was an Oracle Consultant for 5 years implementing a variety of tools alongside Database
+                        Administration for clients in different sectors.<br>
                         I strive to create simple, original and impactful user experiences.<br>
                     </p>
-                        <a id="collaborateBtn" class="btn btn-primary" href="#footerSection">COLLABORATE</a>
+                    <a id="collaborateBtn" class="btn btn-primary" href="#footerSection">COLLABORATE</a>
 
-                        <a href="https://github.com/ianasqazi" target="_blank">
-                            <img class="img-fluid rounded col-sm-4" id="gitIcon" src="assets/images/icons/githubIcon.png" alt="github Icon" title="github Icon">
-                        </a>
+                    <a href="https://github.com/ianasqazi" target="_blank">
+                        <img class="img-fluid rounded col-sm-4" id="gitIcon" src="assets/images/icons/githubIcon.png"
+                            alt="github Icon" title="github Icon">
+                    </a>
                     </p>
                 </div>
 
-               
+
                 <div class="bird-container bird-container--one">
                     <div class="bird bird--one"></div>
                 </div>
@@ -100,50 +111,50 @@
 
             </div>
 
-            <div class="row" >
+            <div class="row">
                 <div class="col-sm-6"></div>
                 <div class="col-sm-6 weatherForcast text-right" id="weatherForcast">
-                        <div class="row">
-                                <div class="col">
-                                    <span id="dayDate"></span>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <span id="currentCity"></span>
-                                    <span id="currentCountry"></span>
-                                </div>
-                            </div>
-            
-                            <div class="row">
-                                <div class="col">
-                                    <span id="weatherInfo"></span>
-                                    <img id="weatherIcon">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/icons/temp.png"><span id="currentTemp"></span>
-                                    <img src="assets/images/icons/tempLow.png"><span id="tempLow"></span>
-                                    <img src="assets/images/icons/tempHigh.png"><span id="tempHigh"></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/icons/pressure.png"><span id="pressure"></span>
-                                    <img src="assets/images/icons/wind.png"><span id="windSpeed"></span>
-                                    <img src="assets/images/icons/humidity.png"><span id="humidity"></span>
+                    <div class="row">
+                        <div class="col">
+                            <span id="dayDate"></span>
+                        </div>
+                    </div>
 
-                                </div>
-                            </div>
-                            
-                            
-                        </div> 
+                    <div class="row">
+                        <div class="col">
+                            <span id="currentCity"></span>
+                            <span id="currentCountry"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <span id="weatherInfo"></span>
+                            <img id="weatherIcon">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/icons/temp.png"><span id="currentTemp"></span>
+                            <img src="assets/images/icons/tempLow.png"><span id="tempLow"></span>
+                            <img src="assets/images/icons/tempHigh.png"><span id="tempHigh"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/icons/pressure.png"><span id="pressure"></span>
+                            <img src="assets/images/icons/wind.png"><span id="windSpeed"></span>
+                            <img src="assets/images/icons/humidity.png"><span id="humidity"></span>
+
+                        </div>
+                    </div>
+
+
                 </div>
-                
-               
-            
+            </div>
+
+
+
 
 
         </div>
@@ -153,168 +164,582 @@
 
     <div class="container-fluid text-center" id="skillSetSection">
 
-            <!-- Portfolio Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase" id="skillSetHeading">SKILL SET</h2>
-
-
-            <div class="row">
-
-                    <div class="col-sm-4">
-                        <h3>PROGRAMMING LANGUAGUES</h3>
-                        <div>
-                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/jsIcon.png" alt="JS Icon" title="JS Icon">
-                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/htmlIcon.png" alt="HTML Icon" title="HTML Icon">
-                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/cssIcon.png" alt="CSS Icon" title="CSS Icon">
-                                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/sqlIcon.png" alt="SQL Icon" title="SQL Icon">
-
-                        </div>
-                        
-
-                    </div>
-
-                    <div class="col-sm-4">
-
-                        <h3>FRAMEWORKS</h3>
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/jqueryIcon.png" alt="jQuery Icon" title="jQuery Icon">
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/npmIcon.png" alt="npm Icon" title="npm Icon">
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/nodejsIcon.png" alt="Node JS Icon" title="Node JS Icon"><br>
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/reactIcon.png" alt="React JS Icon" title="React JS Icon">
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/angularjsIcon.png" alt="Angular JS Icon" title="Angular JS Icon">    
-
-                    </div>
-                    
-
-                    <div class="col-sm-4">
-                        <h3>DATABASES</h3>
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/oracledbIcon.png" alt="Angular JS Icon" title="Angular JS Icon">
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/mysqlIcon.png" alt="Angular JS Icon" title="Angular JS Icon">
-                        <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/mongodbIcon.png" alt="Angular JS Icon" title="Angular JS Icon">
-                    </div>
-
-                </div>
-
-                <br><br><br><br><br><br><br>
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 id="expertiseRotate">I have expertise in <br>
-                            <span
-                               class="txt-rotate"
-                               data-period="100"
-                               data-rotate='[ "React.js", "Express.js", "MongoDB", "Node.js", "jQuery", "HTML", "CSS", "Bootstrap"]'></span>
-                        </h4> 
-                    </div>
-                </div>
-
-    </div>
-
-<!-- Portfolio Section  -->
-
-    <div class="container-fluid text-center" id="portfolioSection">
         <!-- Portfolio Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase"  id="portfolioSetHeading">Portfolio</h2>
-            
-      
-        <!-- Portfolio Grid Items -->
+        <h2 class="page-section-heading text-center text-uppercase" id="skillSetHeading">SKILL SET</h2>
 
-        <!-- include fa icons for languages used  -->
-        <div class="row container-fluid">
-            <div class="col-sm-6 col-xs-12 padding" id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/password_generator_ss.png" alt="Password Generator Website Screenshot" title="Random Password Generator"></div>
-                <h5>Password Generator</h5>
-                <p>A random password generator tool</p>
-                <a class="btn btn-primary" href="https://ianasqazi.github.io/Password-Generator/" target="_blank">VIEW SITE</a>
-            </div>                    
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/dayplanner_ss.png" alt="Day Planner Website Screenshot" title="Day Planner Application"></div>
-                <h5>Day Planner</h5>
-                <p>Simple Calendar Application that allows the user to save events for each hour of the day.</p>
-                <a class="btn btn-primary" href="https://ianasqazi.github.io/Day-Planner/" target="_blank">VIEW SITE</a>
-            </div>
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/jsquiz_ss.png" alt="JS Quiz Website Screenshot" title="JS Quiz Website"></div>
-                <h5>Javascript Quiz</h5>
-                <p>A simple questionnaire application which will give you score based on how fast you answer the questions</p>
-                <a class="btn btn-primary" href="https://ianasqazi.github.io/JS-Quiz/" target="_blank">VIEW SITE</a>
-            </div>
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/clima_ss.png" alt="Clima Website Screenshot" title="Climate Website"></div>
-                <h5>CLIMA - Weather-App</h5>
-                <p>A Weather Application using free Weather API from openweatherapp.org. Access current weather data for any location on Earth including over 200,000 cities!</p>
-                <a class="btn btn-primary" href="https://ianasqazi.github.io/Weather-App/" target="_blank">VIEW SITE</a>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <h3>PROGRAMMING LANGUAGUES</h3>
+                <div>
+                    <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/jsIcon.png"
+                        alt="JS Icon" title="JS Icon">
+                    <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/htmlIcon.png"
+                        alt="HTML Icon" title="HTML Icon">
+                    <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/cssIcon.png"
+                        alt="CSS Icon" title="CSS Icon">
+                    <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/sqlIcon.png"
+                        alt="SQL Icon" title="SQL Icon">
+
+                </div>
+
+
             </div>
 
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/dev_profile_ss.png" alt="DevProfile Generator" title="Dev Profile Generator"></div>
-                <h5>Developer GitHub Profile Generator</h5>
-                <p>Get information about any profile on Github by providing the github username</p>
-                <a class="btn btn-primary" href="https://github.com/ianasqazi/Dev-Profile-Generator/" target="_blank">VIEW SITE</a>
+            <div class="col-sm-4">
+
+                <h3>FRAMEWORKS</h3>
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/jqueryIcon.png"
+                    alt="jQuery Icon" title="jQuery Icon">
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/npmIcon.png"
+                    alt="npm Icon" title="npm Icon">
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/nodejsIcon.png"
+                    alt="Node JS Icon" title="Node JS Icon"><br>
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/reactIcon.png"
+                    alt="React JS Icon" title="React JS Icon">
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/angularjsIcon.png"
+                    alt="Angular JS Icon" title="Angular JS Icon">
+
             </div>
 
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/ScreenShot_TeamRoaster.png" alt="DevProfile SS" title="Dev Profile Generator"></div>
-                <h5>Engineering Team Profile Generator</h5>
-                <p>Build a Software Engineering team using command line application. The command line will ask you for all the information required to build a team and generate a roaster of the team based on your input</p>
-                <a class="btn btn-primary" href="https://github.com/ianasqazi/Team-Profie/" target="_blank">VIEW GITHUB</a>
-            </div>
 
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/NoteWorthy.png" alt="Note-Worthy" title="Note-Worthy"></div>
-                <h5>Engineering Team Profile Generator</h5>
-                <p>An application that can be used to write, save, and delete notes. This application uses express backend and save and retrieve note data from a JSON file</p>
-                <a class="btn btn-primary" href="https://note-worty.herokuapp.com/" target="_blank">VIEW ON HEROKU</a>
-                <a class="btn btn-primary" href="https://github.com/ianasqazi/Note-Worthy" target="_blank">VIEW GITHUB</a>
-            </div>
-
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/HR_emp_ss.png" alt="HR Employee Tracker" title="HR Employee Tracker"></div>
-                <h5>HR Employee Tracker</h5>
-                <p>Build a Software Engineering team using command line application. The command line will ask you for all the information required to build a team and generate a roaster of the team based on your input</p>
-                <a class="btn btn-primary" href="https://repl.it/github/ianasqazi/HR-Employee-Tracker" target="_blank">VIEW on REPL.IT</a>
-                <a class="btn btn-primary" href="https://github.com/ianasqazi/HR-Employee-Tracker" target="_blank">VIEW GITHUB</a>
-                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=WIeUFYX6tzw&feature=youtu.be" target="_blank">VIEW on YOUTUBE</a>
-            </div>
-
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/burger_screenshot.png" alt="BURGERIZER" title="BURGERIZER"></div>
-                <h5>BURGERIZER</h5>
-                <p>Often you create a wish list to complete and feel accomplished when thats checked mark. This application is a sample of wish list of burgers I want to have and once completed I checked it as devoured.</p>
-                <a class="btn btn-primary" href="https://burgerizer.herokuapp.com/" target="_blank">VIEW on HEROKU</a>
-                <a class="btn btn-primary" href="https://github.com/ianasqazi/Burger-Handlebars" target="_blank">VIEW GITHUB</a>
-                
-            </div>
-
-               <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/airdate.png" alt="Airport Dating" title="Airport"></div>
-                <h5>AIRDATE</h5>
-                <p> Meet people at Layover during your flight.
-                    </p>
-                <a class="btn btn-primary" href="https://uoft-project2.herokuapp.com/" target="_blank">VIEW on HEROKU</a>
-                <a class="btn btn-primary" href="https://github.com/saltamay/UofT_BootCamp_Project-2" target="_blank">VIEW GITHUB</a>
-                
-            </div>
-
-            <div class="col-sm-6 col-xs-12 padding"  id="portfolioItems">
-                <div><img class="img-fluid rounded" src="assets/screenshots/workout_tracker.png" alt="Workout Tracker" title="Workout"></div>
-                <h5>Workout Tracker</h5>
-                <p>Track your workout and exercises using this tool</p>
-                <a class="btn btn-primary" href="https://intense-shore-05475.herokuapp.com/" target="_blank">VIEW on HEROKU</a>
-                <a class="btn btn-primary" href="https://github.com/ianasqazi/WorkoutTracker" target="_blank">VIEW GITHUB</a>
-                
+            <div class="col-sm-4">
+                <h3>DATABASES</h3>
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/oracledbIcon.png"
+                    alt="Angular JS Icon" title="Angular JS Icon">
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/mysqlIcon.png"
+                    alt="Angular JS Icon" title="Angular JS Icon">
+                <img class="img-fluid rounded col-sm-4" id="langIcon" src="assets/images/icons/mongodbIcon.png"
+                    alt="Angular JS Icon" title="Angular JS Icon">
             </div>
 
         </div>
+
+        <br><br><br><br><br><br><br>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 id="expertiseRotate">I have expertise in <br>
+                    <span class="txt-rotate" data-period="100"
+                        data-rotate='[ "React.js", "Express.js", "MongoDB", "Node.js", "jQuery", "HTML", "CSS", "Bootstrap"]'></span>
+                </h4>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Portfolio Section  -->
+
+    <div class="container-fluid text-center" id="portfolioSection">
+        <!-- Portfolio Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase" id="portfolioSetHeading">PROJECTS</h2>
+
+
+        <!-- Portfolio Grid Items -->
+
+        <!-- include fa icons for languages used  -->
+
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="card-deck">
+
+                    <!-- COVID DASHBOARD  -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>COVID-19 DASHBOARD</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/covid_dashboard.png" class="card-img-top"
+                            alt="COVID Dashboard Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">A Corona virus Dashboard with MAP showing
+                                up-to-date statistics of
+                                increase of corona virus around the world.Hover over the countries to see additional
+                                details for each country in tooltips. </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://codesandbox.io/s/covid19-dashboard-kmv7r"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/covid-dashboard"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">REACT, REACT-ROUTER-DOM, REACTSTRAP, NODE.js, REACTLOADINGG,
+                                MAPBOX-GL, AXIOS, SWR, COUNTRY-CODE-LOOKUP, COMMA-NUMBER, CORONA Virus API's</small>
+                        </div>
+                    </div>
+
+                    <!-- JOBS & DRAGONS  -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>JOBS & DRAGONS</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/jobsanddragons.png" class="card-img-top"
+                            alt="Jobs & Dragons Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">Full stack job search application built in
+                                a role-playing game (RPG)
+                                format to make job hunt
+                                exciting. Each player/job applicant will receive series of quests to complete.A player
+                                has to successfully complete
+                                all
+                                the levels in order to be eligible to apply jobs. </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://jobs-and-dragons.herokuapp.com/"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/Winyumi/jobs-and-dragons"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">REACT, REACT-HOOKS, REACT-ROUTER, CONTEXT-API, EXPRESS.js,
+                                NODE.js, MATERIALIZE CSS, MONGO DB, MONGOOSE, AUTH0, GITHUB API and ADZUNA API.
+                            </small>
+                        </div>
+                    </div>
+
+                    <!-- SPOTIFY PLAYER  -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>SPOTIFY PLAYER</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/spotify-native3.png" class="card-img-top"
+                            alt="Spotify App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">Motivated to understand the building of a
+                                native mobile app which directly interact with the
+                                API without depending on middleware such as plugins and WebViews. </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://expo.io/@ianasqazi/spotify" target="_blank"
+                                rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/spotify" target="_blank"
+                                rel="noopener noreferrer">VIEW CODE GITHUB</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">REACT, REACT-NATIVE, REACT-DOM, EXPO and SPOTIFY API</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card-deck">
+
+                    <!-- GOOGLE BOOKS -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>GOOGLE BOOKS</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/gbooksreact.png" class="card-img-top"
+                            alt="Google Books App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">Full stack book search application where
+                                users can search and buy e-books directly from the
+                                Google books website. Users can save their favorites books if they wish to purchase
+                                later</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://gbooksreact.herokuapp.com/" target="_blank"
+                                rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/gbooks-react"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">REACT, REACT-ROUTER-DOM, EXPRESS.js, NODE.js, MATERIALIZE CSS,
+                                MONGO DB, MONGOOSE, AXIOS and GOOGLE BOOKS API</small>
+                        </div>
+                    </div>
+
+                    <!-- EMPLOYEE DIRECTORY REACT -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>EMPLOYEE DIRECTORY</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/react-employee-directory.png" class="card-img-top"
+                            alt="Employee Directory App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">Developed an application to manage contact
+                                details of employees in a company. User can
+                                search using filters like Name, Phone, email, DOB etc</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://emp-dir-react.herokuapp.com/" target="_blank"
+                                rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/emp-dir-react"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">REACT, REACT-DOM, NODE.js, BOOTSTRAP, AXIOS and RANDOM USER
+                                API</small>
+                        </div>
+                    </div>
+
+                    <!-- PROGRESSIVE BUDGET TRACKER -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>PWA - BUDGET TRACKER</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/pwaBudget.png" class="card-img-top"
+                            alt="PWA Budget Tracker App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">This project displays the functionality of
+                                caching data to be used in offline mode. The application has his own transaction wallet
+                                which he can use online as well as offline if user does not have internet. And the
+                                transaction history adds it to the total when back online.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://mysterious-tundra-39658.herokuapp.com/"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/PWA-Budged-Tracker"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">EXPRESS.js, NODE.js, CHART.js, BOOTSTRAP, LITE-SERVER, MONGOOSE,
+                                COMPRESSION</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card-deck">
+
+                    <!-- FITNESS - WORKOUT TRACKER -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>FITNESS TRACKER DASHBOARD</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/workout_tracker.png" class="card-img-top"
+                            alt="Google Books App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">Manage your workouts by adding new workouts
+                                or routines and view results in different charts and graphs.</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://intense-shore-05475.herokuapp.com/"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/WorkoutTracker"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">EXPRESS.js, MONGO DB, MONGOOSE, MORGAN, PATH and
+                                BODY-PARSER</small>
+                        </div>
+                    </div>
+
+                    <!-- BURGER LOGGER -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>BURGERIZER - HANDLEBARS</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/burger_screenshot.png" class="card-img-top"
+                            alt="Burger Logger App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                This application is a sample of wish list of burgers I want to have and once completed I
+                                checked it as devoured.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://burgerizer.herokuapp.com/" target="_blank"
+                                rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/Burger-Handlebars"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">EXPRESS, EXPRESS-HANDLEBARS and MYSQL</small>
+                        </div>
+                    </div>
+
+                    <!-- HR EMPLOYEE TRACKER -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>HR - EMPLOYEE TRACKER</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/HR_emp_ss.png" class="card-img-top"
+                            alt="HR Employee Tracker App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                Built a Employee tracker application using vanilla JavaScript in Command Line Interface
+                                and some libraries which are helpful in CLI. Human resources department uses
+                                applications like these to ADD/UPDATE/DELETE employees and their
+                                ROLES/DEPARTMENTS/SALARIES etc.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://repl.it/github/ianasqazi/HR-Employee-Tracker"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/HR-Employee-Tracker"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">NODE.js, JAVASCRIPT, HTML, CSS, MYSQL, INQUIRER,
+                                CONSOLE-TABLE-PRINTER and ASCII-ART</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card-deck">
+
+                    <!-- NOTE TAKER -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>NOTE - WORTHY</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/NoteWorthy.png" class="card-img-top"
+                            alt="Note Taker App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                An application that can be used to write, save, and delete notes.
+                                This application will use an express backend and save and retrieve note data from a JSON
+                                file.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://note-worty.herokuapp.com/" target="_blank"
+                                rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/Note-Worthy"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">EXPRESS.js, NODE.js, NODEMON, SHORTID</small>
+                        </div>
+                    </div>
+
+                    <!-- Engineering Team Roaster -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>ENGINEERING TEAM ROASTER</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/ScreenShot_TeamRoaster.png" class="card-img-top"
+                            alt="Burger Logger App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                Build your own Software Engineering team using command line application.
+                                The command line will ask you for all the information required to build a team and
+                                generate a roaster of the team based on your input.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/Team-Profie/"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">NODE.js, INQUIRER, OPEN, JEST</small>
+                        </div>
+                    </div>
+
+                    <!-- Weather App -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>CLIMA - WEATHER APP</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/clima_ss.png" class="card-img-top" alt="Weather App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                Built an application to access current weather forcast of over 200,000 cities using
+                                vanilla JavaScript and jQuery.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://ianasqazi.github.io/Weather-App/"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/Weather-App"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">JAVASCRIPT, jQUERY, HTML, CSS, AJAX and OPEN WEATHER API</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card-deck">
+
+                    <!-- Day Planner App -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>DAY PLANNER</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/dayplanner_ss.png" class="card-img-top"
+                            alt="Day Planner App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                Simple Calendar Application that allows the user to save events for each hour of the
+                                day which is saved in browser's Local Storage.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://ianasqazi.github.io/Day-Planner/"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/Day-Planner"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">JAVASCRIPT, jQUERY, BOOTSTRAP and MOMENT.js</small>
+                        </div>
+                    </div>
+
+                    <!-- Code Quiz -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>JS CODE QUIZ</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/jsquiz_ss.png" class="card-img-top"
+                            alt="JS Code Quiz App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                A simple questionnaire application which will give you score based on how fast you
+                                answer the questions.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://ianasqazi.github.io/JS-Quiz/" target="_blank"
+                                rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/JS-Quiz/" target="_blank"
+                                rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">NODE.js, INQUIRER, OPEN, JEST</small>
+                        </div>
+                    </div>
+
+                    <!-- Password Generator -->
+                    <div class="card border-dark">
+                        <div class="card-header">
+                            <h3>RANDOM PASSWORD GENERATOR</h3>
+                        </div>
+
+                        <img src="./assets/screenshots/password_generator_ss.png" class="card-img-top"
+                            alt="Password Generator App Screenshot">
+
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: smaller;">
+                                Generate a random password of variable length and complexity by providing input by user.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-sm btn-dark" href="https://ianasqazi.github.io/Password-Generator/"
+                                target="_blank" rel="noopener noreferrer">GO TO APP</a>
+                            <a class="btn btn-sm btn-dark" href="https://github.com/ianasqazi/Password-Generator"
+                                target="_blank" rel="noopener noreferrer">GITHUB REPO</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <h6 class="text-muted">Technologies Used</h6>
+                            <small class="text-muted">JAVASCRIPT, HTML, CSS and BOOTSTRAP</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
     </div>
 
 
-<!-- VOLUNTEERING SECTION  -->
+    <!-- VOLUNTEERING SECTION  -->
 
     <div class="padding">
-        
+
         <div class="container-fluid text-center" id="volunteeringSection">
             <div class="row">
                 <h2 class="text-uppercase text-center container-fluid" id="volHeading">Volunteering</h2>
-                <a href="./AnasQazi_Vol_CV_2.pdf" target="_blank" class="text-center container-fluid"><span id="volCV">ianasqazi_Volunteering_CV.pdf</span></a>
+                <a href="./AnasQazi_Vol_CV_2.pdf" target="_blank" class="text-center container-fluid"><span
+                        id="volCV">ianasqazi_Volunteering_CV.pdf</span></a>
                 <hr>
             </div>
             <div class="row">
@@ -370,39 +795,28 @@
         <h1 id="contact">
             CONTACT ME
         </h1>
-        <form
-            class={this.props.shake}
-            action="https://formspree.io/mqkbnwal"
-            method="POST">
+        <form class={this.props.shake} action="https://formspree.io/mqkbnwal" method="POST">
             <div class="form-group">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 mx-auto">
-                        <input
-                            type="text"
-                            name="name"
-                            class="form-control form-control-lg"
-                            id="name"
-                            placeholder="Name"
-                        />
+                        <input type="text" name="name" class="form-control form-control-lg" id="name"
+                            placeholder="Name" />
                     </div>
                 </div>
             </div>
             <div class="form-group hidden">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 mx-auto">
-                        <input
-                            type="email"
-                            name="_replyto"
-                            class="form-control form-control-lg"
-                            id="exampleFormControlInput1"
-                            placeholder="Your email">
+                        <input type="email" name="_replyto" class="form-control form-control-lg"
+                            id="exampleFormControlInput1" placeholder="Your email">
                     </div>
                 </div>
             </div>
             <div class="form-group hiddenRight">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 mx-auto">
-                        <textarea name="message" class="form-control form-control-lg" rows="3" placeholder="Write your message...">
+                        <textarea name="message" class="form-control form-control-lg" rows="3"
+                            placeholder="Write your message...">
                         </textarea>
                     </div>
                 </div>
@@ -425,8 +839,8 @@
                 <h3>COLLABORATE WITH ME</h3>
                 <h4 style="color:#F2CAA7;">{ Anas Qazi }</h4>
                 <p>647-581-7770<br>
-                ianasqazi@gmail.com<br>
-                Toronto, Canada</p>
+                    ianasqazi@gmail.com<br>
+                    Toronto, Canada</p>
 
                 <a href="mailto:ianasqazi@gmail.com" class="fas fa-envelope-square" title="Email Me"></a>
                 <a href="tel:647-581-7770" class="fas fa-mobile-alt" title="Call Me"></a>
@@ -436,39 +850,47 @@
             </div>
             <div class="col-sm-4" id="connectMe">
                 <h3>CONNECT ME</h3>
-                <a href="https://www.linkedin.com/in/anasqazi" class="fab fa-linkedin" target="_blank" title="LinkedIn"></a>
-                <a href="https://uttorfsfpt092-czt9438.slack.com/team/UN0F08AG6" class="fab fa-slack" target="_blank" title="Slack"></a>  
-                <a href="https://t.me/ianasqazi" class="fab fa-telegram-plane" target="_blank" title="Telegram"></a> 
+                <a href="https://www.linkedin.com/in/anasqazi" class="fab fa-linkedin" target="_blank"
+                    title="LinkedIn"></a>
+                <a href="https://uttorfsfpt092-czt9438.slack.com/team/UN0F08AG6" class="fab fa-slack" target="_blank"
+                    title="Slack"></a>
+                <a href="https://t.me/ianasqazi" class="fab fa-telegram-plane" target="_blank" title="Telegram"></a>
                 <a href="https://twitter.com/ianasqazi" class="fab fa-twitter" target="_blank" title="Twitter"></a>
-                <a href="https://www.facebook.com/ianasqazi" class="fab fa-facebook"  target="_blank" title="Facebook"></a>
-                <a href="https://www.instagram.com/ianasqazi/" class="fab fa-instagram" target="_blank" title="Instagram"></a>
-                <a href="https://www.snapchat/com/add/ianasqazi" class="fab fa-snapchat-square" target="_blank" title="Snapchat"></a>
-                <a href="https://www.youtube.com/c/AnasQazi" class="fab fa-youtube-square" target="_blank" title="Youtube"></a>
+                <a href="https://www.facebook.com/ianasqazi" class="fab fa-facebook" target="_blank"
+                    title="Facebook"></a>
+                <a href="https://www.instagram.com/ianasqazi/" class="fab fa-instagram" target="_blank"
+                    title="Instagram"></a>
+                <a href="https://www.snapchat/com/add/ianasqazi" class="fab fa-snapchat-square" target="_blank"
+                    title="Snapchat"></a>
+                <a href="https://www.youtube.com/c/AnasQazi" class="fab fa-youtube-square" target="_blank"
+                    title="Youtube"></a>
 
             </div>
             <div class="col-sm-4" id="githubLink">
-                    <h3>GITHUB</h3>
-                    <a href="https://github.com/ianasqazi" target="_blank">
-                    <img class="img-fluid rounded" id="footerGitIcon" src="assets/images/icons/githubIcon.png" alt="github Icon" title="Github Profile">
-                    </a>
+                <h3>GITHUB</h3>
+                <a href="https://github.com/ianasqazi" target="_blank">
+                    <img class="img-fluid rounded" id="footerGitIcon" src="assets/images/icons/githubIcon.png"
+                        alt="github Icon" title="Github Profile">
+                </a>
             </div>
         </div>
 
         <div class="row container-fluid text-center">
-                <div class="col">
-                    <a id="scrollTop" href = "#mainNav">
-                        <i class="fas fa-angle-up"></i>SCROLL TO TOP<i class="fas fa-angle-up"></i>
-                    </a>
-                </div>  
+            <div class="col">
+                <a id="scrollTop" href="#mainNav">
+                    <i class="fas fa-angle-up"></i>SCROLL TO TOP<i class="fas fa-angle-up"></i>
+                </a>
+            </div>
         </div>
 
         <div class="row container-fluid text-right" id="fixedBotton">
             <div class="col">
-                    <span id="footerNoteSpan"> &copy; Anas Qazi 2020</span>
+                <span id="footerNoteSpan"> &copy; Anas Qazi 2020</span>
             </div>
-            
+
         </div>
 
     </footer>
 </body>
+
 </html>
